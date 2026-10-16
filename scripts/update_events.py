@@ -39,11 +39,20 @@ GENGATEN_MAX_PAGES = 5
 
 # ---------------------------------------------------------------- 共通部品
 
-def http_get(url: str, retries: int = 3, timeout: int = 40) -> str:
+REQUEST_HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml",
+    "Accept-Language": "ja,en;q=0.5",
+}
+
+
+def http_get(url: str, retries: int = 4, timeout: int = 90) -> str:
+    # artscapeはGitHub ActionsのクラウドIPからだと応答が極端に遅くなることがあるため、待ち時間を長めにしている
     last_error: Exception | None = None
     for attempt in range(retries):
+        started = time.time()
         try:
-            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            request = urllib.request.Request(url, headers=REQUEST_HEADERS)
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 body = response.read().decode("utf-8", errors="replace")
             time.sleep(REQUEST_INTERVAL)
@@ -54,7 +63,8 @@ def http_get(url: str, retries: int = 3, timeout: int = 40) -> str:
             last_error = exc
         except Exception as exc:  # noqa: BLE001
             last_error = exc
-        time.sleep(2 * (attempt + 1))
+        print(f"[warn] {url} 取得{attempt + 1}回目失敗({time.time() - started:.0f}秒): {last_error!r}")
+        time.sleep(5 * (attempt + 1))
     assert last_error is not None
     raise last_error
 
