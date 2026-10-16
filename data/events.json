@@ -1,29 +1,29 @@
 {
   "last_updated": "2026-10-16",
-  "last_updated_note": "2026-10-16 定期更新（artscape / コラボカフェ.com / 原画展.info 確認）",
+  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）（一部ソースは取得失敗のため既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
     {
-      "date": "2026-09-18",
-      "dateEnd": "2026-10-25",
-      "title": "深堀隆介展―「金魚の唄」―山田憲司･北川啓介との共創",
-      "venue": "文化のみち橦木館",
-      "city": "名古屋市",
-      "category": "現代美術",
-      "note": "器の中に金魚が泳ぐ超写実樹脂絵画で知られる深堀隆介と建築家によるコラボ企画。",
+      "date": "2026-07-25",
+      "dateEnd": "2026-10-18",
+      "title": "刀根里衣 絵本原画展",
+      "venue": "高浜市やきものの里かわら美術館",
+      "city": "高浜市",
+      "category": "こども・絵本",
+      "note": "国内外で人気の絵本作家、刀根里衣の原画を多数展示。",
       "src": "artscape",
-      "url": "https://shumokukan.jp/news/kingyonouta.html"
+      "url": "https://artscape.jp/exhibitions/73458/"
     },
     {
-      "date": "2026-09-19",
-      "dateEnd": "2026-11-29",
-      "title": "ゴッホの跳ね橋と印象派の画家たち ヴァルラフ=リヒャルツ美術館所蔵",
-      "venue": "名古屋市美術館",
+      "date": "2026-08-21",
+      "dateEnd": "2026-11-16",
+      "title": "松坂屋史料室企画展Vol.67 紅型II―琉球王国の装い―",
+      "venue": "松坂屋史料室",
       "city": "名古屋市",
-      "category": "絵画",
-      "note": "ドイツの名門コレクションからゴッホ・印象派の名品が来日。",
+      "category": "染織・工芸",
+      "note": "琉球王国の宮廷装束を彩った紅型を紹介。",
       "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/72950/"
+      "url": "https://artscape.jp/exhibitions/76709/"
     },
     {
       "date": "2026-09-05",
@@ -48,17 +48,6 @@
       "url": "https://artscape.jp/exhibitions/73473/"
     },
     {
-      "date": "2026-07-25",
-      "dateEnd": "2026-10-18",
-      "title": "刀根里衣 絵本原画展",
-      "venue": "高浜市やきものの里かわら美術館",
-      "city": "高浜市",
-      "category": "こども・絵本",
-      "note": "国内外で人気の絵本作家、刀根里衣の原画を多数展示。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/73458/"
-    },
-    {
       "date": "2026-09-05",
       "dateEnd": "2026-10-26",
       "title": "平澤まりこ個展「for my dear Companions」",
@@ -70,6 +59,17 @@
       "url": "https://artscape.jp/exhibitions/76732/"
     },
     {
+      "date": "2026-09-11",
+      "dateEnd": "2027-02-28",
+      "title": "企画展「日本のモータリゼーション」",
+      "venue": "トヨタ博物館",
+      "city": "長久手市",
+      "category": "デザイン・産業",
+      "note": "クルマ好きにもデザイン好きにも楽しめる、日本の自動車社会史を辿る企画展。",
+      "src": "eplus",
+      "url": "https://eplus.jp/sf/detail/4307180002-P0030002P021001"
+    },
+    {
       "date": "2026-09-12",
       "dateEnd": "2026-11-08",
       "title": "小林徳三郎―詩のような日常宇宙。―",
@@ -79,6 +79,61 @@
       "note": "日常の風景を詩情豊かに描いた画家の回顧的企画展。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/75693/"
+    },
+    {
+      "date": "2026-09-17",
+      "dateEnd": "2026-10-18",
+      "title": "塊魂×NeCoLabo Cafe",
+      "venue": "NeCoLabo Cafe 名駅三丁目店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "人気ゲーム「塊魂」の世界観を再現したコラボカフェ。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/katamari-damacy-necolabo-cafe-2026/"
+    },
+    {
+      "date": "2026-09-18",
+      "dateEnd": "2026-11-23",
+      "title": "企画展「書の魅力～書の鑑賞への誘い～」",
+      "venue": "春日井市道風記念館",
+      "city": "春日井市",
+      "category": "書",
+      "note": "墨色に着目し書の鑑賞方法を提案。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/73611/"
+    },
+    {
+      "date": "2026-09-18",
+      "dateEnd": "2026-10-25",
+      "title": "深堀隆介展―「金魚の唄」―山田憲司･北川啓介との共創",
+      "venue": "文化のみち橦木館",
+      "city": "名古屋市",
+      "category": "現代美術",
+      "note": "器の中に金魚が泳ぐ超写実樹脂絵画で知られる深堀隆介と建築家によるコラボ企画。",
+      "src": "artscape",
+      "url": "https://shumokukan.jp/news/kingyonouta.html"
+    },
+    {
+      "date": "2026-09-19",
+      "dateEnd": "2026-11-29",
+      "title": "ゴッホの跳ね橋と印象派の画家たち ヴァルラフ=リヒャルツ美術館所蔵",
+      "venue": "名古屋市美術館",
+      "city": "名古屋市",
+      "category": "絵画",
+      "note": "ドイツの名門コレクションからゴッホ・印象派の名品が来日。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/72950/"
+    },
+    {
+      "date": "2026-09-19",
+      "dateEnd": "2026-12-06",
+      "title": "所蔵茶道具展　茶碗をめぐる見立てと連想",
+      "venue": "桑山美術館",
+      "city": "名古屋市",
+      "category": "茶道具・工芸",
+      "note": "所蔵の茶碗を通して「見立て」と「連想」を読み解く企画展。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/79341/"
     },
     {
       "date": "2026-09-19",
@@ -103,26 +158,15 @@
       "url": "https://www.museum.or.jp/event?area=pref-23"
     },
     {
-      "date": "2026-10-10",
-      "dateEnd": "2026-10-27",
-      "title": "荻野佐和子展 うぶすなの",
-      "venue": "ギャラリーサンセリテ",
-      "city": "豊橋市",
-      "category": "現代美術",
-      "note": "",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/77908/"
-    },
-    {
-      "date": "2026-11-14",
-      "dateEnd": "2026-12-01",
-      "title": "稲吉オサム 陶50",
-      "venue": "ギャラリーサンセリテ",
-      "city": "豊橋市",
-      "category": "工芸・陶芸",
-      "note": "",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/80850/"
+      "date": "2026-10-02",
+      "dateEnd": "2026-10-18",
+      "title": "にゃんにゃんにゃんこ飯店",
+      "venue": "COLLABO PARADISE 名古屋パルコ店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "名古屋会場は約16日間の限定開催。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/nyannyannyanko-sweets-paradise-cafe-2026/"
     },
     {
       "date": "2026-10-03",
@@ -134,6 +178,50 @@
       "note": "徳川家康を支えた三河武士団の実像を紹介。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/78583/"
+    },
+    {
+      "date": "2026-10-03",
+      "dateEnd": "2026-10-25",
+      "title": "しぐれうい×mezzo piano ポップアップストア",
+      "venue": "名古屋PARCO",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "人気イラストレーター・VTuberしぐれういとファッションブランドのコラボストア。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/shigure-ui-mezzo-piano-popup-2026/"
+    },
+    {
+      "date": "2026-10-03",
+      "dateEnd": "2026-10-18",
+      "title": "ハイスクールD×D ポップアップストア in ゲーマーズ",
+      "venue": "ゲーマーズ名古屋店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/highschool-dxd-hero-gamers-popup-2026/"
+    },
+    {
+      "date": "2026-10-06",
+      "dateEnd": "2027-02-02",
+      "title": "ガルパン 推し旅コラボVer. ストア in 名古屋",
+      "venue": "アニメイト名古屋店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "『ガールズ＆パンツァー 最終章』の描き下ろしイラストグッズを販売。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/girls-und-panzer-pop-up-store-nagoya-animate-2026/"
+    },
+    {
+      "date": "2026-10-06",
+      "dateEnd": "2026-12-20",
+      "title": "所蔵企画展 画家とモデル",
+      "venue": "メナード美術館",
+      "city": "小牧市",
+      "category": "絵画",
+      "note": "約60点の所蔵作品で画家とモデルの関係を探る。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/76583/"
     },
     {
       "date": "2026-10-08",
@@ -158,15 +246,37 @@
       "url": "https://www.museum.or.jp/event?area=pref-23"
     },
     {
+      "date": "2026-10-09",
+      "dateEnd": "2026-11-01",
+      "title": "WIND BREAKER 5th ANNIVERSARY EXHIBITION（ウィンブレ 5周年原画展）",
+      "venue": "名古屋PARCO 南館9F イベントスペース",
+      "city": "名古屋市",
+      "category": "アニメ・原画展",
+      "note": "10:00〜20:00（最終日は17:00まで）。前売1,800円／当日2,000円。国内巡回の最終会場。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/wind-breaker-gengaten-tenjikai-nagoya-parco-2026/"
+    },
+    {
+      "date": "2026-10-09",
+      "dateEnd": "2026-10-18",
+      "title": "いのまたむつみ回顧展",
+      "venue": "アルべホール名古屋",
+      "city": "名古屋市",
+      "category": "アニメ・原画展",
+      "note": "数々の人気アニメ・ゲーム作品を手がけたイラストレーターの原画120点超を展示。",
+      "src": "gengaten",
+      "url": "https://gengaten.info/2026/10/11053/"
+    },
+    {
       "date": "2026-10-10",
-      "dateEnd": "2026-12-06",
-      "title": "重文「渡辺崋山像」保存修理記念 企画展",
-      "venue": "田原市博物館",
-      "city": "田原市",
-      "category": "絵画・歴史",
-      "note": "保存修理を終えた重要文化財「渡辺崋山像」を記念公開。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/32767/"
+      "dateEnd": "2026-11-01",
+      "title": "マケイン ゆめかわフェア in アニメイト",
+      "venue": "アニメイト名古屋店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "TVアニメ『負けヒロインが多すぎる!』のフェア。対象購入で特製しおりをプレゼント。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/makeine-yumekawa-fair-animate-2026/"
     },
     {
       "date": "2026-10-10",
@@ -178,6 +288,72 @@
       "note": "古代中国の副葬品「明器」に表された建築の姿を読み解くユニークな視点の企画展。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/75130/"
+    },
+    {
+      "date": "2026-10-10",
+      "dateEnd": "2026-12-06",
+      "title": "永青文庫の名品（仮）",
+      "venue": "豊田市博物館",
+      "city": "豊田市",
+      "category": "歴史・工芸",
+      "note": "細川家伝来の美術品を収める永青文庫の名品を紹介。",
+      "src": "outermost",
+      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
+    },
+    {
+      "date": "2026-10-10",
+      "dateEnd": "2026-10-27",
+      "title": "荻野佐和子展 うぶすなの",
+      "venue": "ギャラリーサンセリテ",
+      "city": "豊橋市",
+      "category": "現代美術",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/77908/"
+    },
+    {
+      "date": "2026-10-10",
+      "dateEnd": "2026-12-06",
+      "title": "重文「渡辺崋山像」保存修理記念 企画展",
+      "venue": "田原市博物館",
+      "city": "田原市",
+      "category": "絵画・歴史",
+      "note": "保存修理を終えた重要文化財「渡辺崋山像」を記念公開。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/32767/"
+    },
+    {
+      "date": "2026-10-16",
+      "dateEnd": "2026-11-29",
+      "title": "ヒロアカカフェ \"WE ARE HERO HOLICS\"",
+      "venue": "BOX cafe&space グローバルゲート名古屋1号店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/heroaca-cafe-we-are-hero-holics-box-cafe-2026/"
+    },
+    {
+      "date": "2026-10-16",
+      "dateEnd": "2026-11-03",
+      "title": "可愛い嘘のカワウソ 原画展 in 名古屋",
+      "venue": "名古屋PARCO 西館8F イベントスペース",
+      "city": "名古屋市",
+      "category": "アニメ・原画展",
+      "note": "入場無料。10:00〜20:00。",
+      "src": "collabo_cafe",
+      "url": "https://kawaiiuso-info.jp/p26/gengaten/nagoya/"
+    },
+    {
+      "date": "2026-10-16",
+      "dateEnd": "2026-10-21",
+      "title": "正反対な君と僕 洒落CAFE レトロポップ",
+      "venue": "洒落CAFE 名古屋セントラルパーク店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "名古屋店は10/21までの限定開催。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/seihantai-kimitoboku-cafe-share-cafe-2026-add-info-sdc/"
     },
     {
       "date": "2026-10-17",
@@ -192,226 +368,6 @@
     },
     {
       "date": "2026-10-17",
-      "dateEnd": "2026-11-29",
-      "title": "四季にうたえば 出光美術館名品展",
-      "venue": "岡崎市美術博物館",
-      "city": "岡崎市",
-      "category": "絵画・古美術",
-      "note": "長期休館からの再開後を飾る、出光美術館の名品による企画展。",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-10-10",
-      "dateEnd": "2026-12-06",
-      "title": "永青文庫の名品（仮）",
-      "venue": "豊田市博物館",
-      "city": "豊田市",
-      "category": "歴史・工芸",
-      "note": "細川家伝来の美術品を収める永青文庫の名品を紹介。",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-10-24",
-      "dateEnd": "2026-11-15",
-      "title": "小野竹喬と荻須高徳展（前期）",
-      "venue": "稲沢市荻須記念美術館",
-      "city": "稲沢市",
-      "category": "絵画",
-      "note": "日本画と洋画、二人の巨匠を並べて紹介する企画展。",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-10-24",
-      "dateEnd": "2027-01-24",
-      "title": "井田照一展（仮）",
-      "venue": "豊田市美術館",
-      "city": "豊田市",
-      "category": "現代美術・版画",
-      "note": "没後20年、国際的に評価された版画家の仕事をまとめて回顧。",
-      "src": "outermost",
-      "url": "https://www.museum.toyota.aichi.jp/exhibition/"
-    },
-    {
-      "date": "2026-10-24",
-      "dateEnd": "2027-01-24",
-      "title": "長谷川繁 ペイン天狗（仮）",
-      "venue": "豊田市美術館",
-      "city": "豊田市",
-      "category": "現代美術",
-      "note": "",
-      "src": "outermost",
-      "url": "https://www.museum.toyota.aichi.jp/exhibition/"
-    },
-    {
-      "date": "2026-10-30",
-      "dateEnd": "2026-12-13",
-      "title": "没後100年記念 ビゲロー 幻のコレクションと近代日本画の夜明け",
-      "venue": "愛知県美術館",
-      "city": "名古屋市",
-      "category": "絵画",
-      "note": "米国人収集家ウィリアム・ビゲローの「幻のコレクション」がまとまって公開される貴重な機会。",
-      "src": "apmoa",
-      "url": "https://apmoa.museum/exhibition"
-    },
-    {
-      "date": "2026-11-21",
-      "dateEnd": "2027-01-11",
-      "title": "笠井誠一展―色彩と形態が織りなす造形の世界―",
-      "venue": "碧南市藤井達吉現代美術館",
-      "city": "碧南市",
-      "category": "絵画",
-      "note": "",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-09-11",
-      "dateEnd": "2027-02-28",
-      "title": "企画展「日本のモータリゼーション」",
-      "venue": "トヨタ博物館",
-      "city": "長久手市",
-      "category": "デザイン・産業",
-      "note": "クルマ好きにもデザイン好きにも楽しめる、日本の自動車社会史を辿る企画展。",
-      "src": "eplus",
-      "url": "https://eplus.jp/sf/detail/4307180002-P0030002P021001"
-    },
-    {
-      "date": "2026-09-17",
-      "dateEnd": "2026-10-18",
-      "title": "塊魂×NeCoLabo Cafe",
-      "venue": "NeCoLabo Cafe 名駅三丁目店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "人気ゲーム「塊魂」の世界観を再現したコラボカフェ。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/katamari-damacy-necolabo-cafe-2026/"
-    },
-    {
-      "date": "2026-10-03",
-      "dateEnd": "2026-10-25",
-      "title": "しぐれうい×mezzo piano ポップアップストア",
-      "venue": "名古屋PARCO",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "人気イラストレーター・VTuberしぐれういとファッションブランドのコラボストア。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/shigure-ui-mezzo-piano-popup-2026/"
-    },
-    {
-      "date": "2026-10-09",
-      "dateEnd": "2026-10-18",
-      "title": "いのまたむつみ回顧展",
-      "venue": "アルべホール名古屋",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "数々の人気アニメ・ゲーム作品を手がけたイラストレーターの原画120点超を展示。",
-      "src": "gengaten",
-      "url": "https://gengaten.info/2026/10/11053/"
-    },
-    {
-      "date": "2026-11-06",
-      "dateEnd": "2026-11-23",
-      "title": "ホロライブ ポップアップショップ（名古屋会場）",
-      "venue": "会場は後日発表",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "人気VTuberグループ「ホロライブ」のグッズを集めたポップアップショップ。会場は公式発表待ち。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/hololive-popup-shop-tokyo-nagoya-fukuoka-osaka-sapporo2026/"
-    },
-    {
-      "date": "2026-11-07",
-      "dateEnd": "2026-11-15",
-      "title": "遊☆戯☆王ZEXAL ストア",
-      "venue": "ジーストア名古屋",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/yugioh-zexal-popup-shop-2026/"
-    },
-    {
-      "date": "2026-11-20",
-      "dateEnd": "2026-12-22",
-      "title": "BLEACH カフェ",
-      "venue": "名古屋PARCO",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "人気マンガ・アニメ『BLEACH』のコラボカフェ。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/bleach-cafe-the-guest-cafe-osaka-nagoya-2026/"
-    },
-    {
-      "date": "2026-12-12",
-      "dateEnd": "2027-01-31",
-      "title": "パンダコパンダ展",
-      "venue": "名古屋PARCO 西館8F PARCO HALL",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "高畑勲・宮崎駿の初期作品「パンダコパンダ」の設定画・原画を紹介する体験型展覧会。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/panda-kopanda-gengaten-tenjikai-nagoya-parco-2026/"
-    },
-    {
-      "date": "2026-09-19",
-      "dateEnd": "2026-12-06",
-      "title": "所蔵茶道具展　茶碗をめぐる見立てと連想",
-      "venue": "桑山美術館",
-      "city": "名古屋市",
-      "category": "茶道具・工芸",
-      "note": "所蔵の茶碗を通して「見立て」と「連想」を読み解く企画展。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/79341/"
-    },
-    {
-      "date": "2026-10-02",
-      "dateEnd": "2026-10-18",
-      "title": "にゃんにゃんにゃんこ飯店",
-      "venue": "COLLABO PARADISE 名古屋パルコ店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "名古屋会場は約16日間の限定開催。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/nyannyannyanko-sweets-paradise-cafe-2026/"
-    },
-    {
-      "date": "2026-10-03",
-      "dateEnd": "2026-10-18",
-      "title": "ハイスクールD×D ポップアップストア in ゲーマーズ",
-      "venue": "ゲーマーズ名古屋店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/highschool-dxd-hero-gamers-popup-2026/"
-    },
-    {
-      "date": "2026-10-10",
-      "dateEnd": "2026-11-01",
-      "title": "マケイン ゆめかわフェア in アニメイト",
-      "venue": "アニメイト名古屋店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "TVアニメ『負けヒロインが多すぎる!』のフェア。対象購入で特製しおりをプレゼント。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/makeine-yumekawa-fair-animate-2026/"
-    },
-    {
-      "date": "2026-10-16",
-      "dateEnd": "2026-11-29",
-      "title": "ヒロアカカフェ \"WE ARE HERO HOLICS\"",
-      "venue": "BOX cafe&space グローバルゲート名古屋1号店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/heroaca-cafe-we-are-hero-holics-box-cafe-2026/"
-    },
-    {
-      "date": "2026-10-17",
       "dateEnd": "2026-10-25",
       "title": "劉諮詢室 POP UP SHOP",
       "venue": "イベントスペース by マルイ",
@@ -422,125 +378,15 @@
       "url": "https://collabo-cafe.com/events/collabo/laulu-popupshop-oioi-2026/"
     },
     {
-      "date": "2026-11-05",
-      "dateEnd": "2026-11-24",
-      "title": "桃源暗鬼 × スイパラ第2弾 お月見カフェ",
-      "venue": "COLLABO PARADISE 名古屋パルコ店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/tougen-anki-cafe-sweets-paradise-vol2-2026/"
-    },
-    {
-      "date": "2026-08-21",
-      "dateEnd": "2026-11-16",
-      "title": "松坂屋史料室企画展Vol.67 紅型II―琉球王国の装い―",
-      "venue": "松坂屋史料室",
-      "city": "名古屋市",
-      "category": "染織・工芸",
-      "note": "琉球王国の宮廷装束を彩った紅型を紹介。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/76709/"
-    },
-    {
-      "date": "2026-10-06",
-      "dateEnd": "2026-12-20",
-      "title": "所蔵企画展 画家とモデル",
-      "venue": "メナード美術館",
-      "city": "小牧市",
-      "category": "絵画",
-      "note": "約60点の所蔵作品で画家とモデルの関係を探る。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/76583/"
-    },
-    {
-      "date": "2026-09-18",
-      "dateEnd": "2026-11-23",
-      "title": "企画展「書の魅力～書の鑑賞への誘い～」",
-      "venue": "春日井市道風記念館",
-      "city": "春日井市",
-      "category": "書",
-      "note": "墨色に着目し書の鑑賞方法を提案。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/73611/"
-    },
-    {
-      "date": "2026-10-16",
-      "dateEnd": "2026-11-03",
-      "title": "可愛い嘘のカワウソ 原画展 in 名古屋",
-      "venue": "名古屋PARCO 西館8F イベントスペース",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "入場無料。10:00〜20:00。",
-      "src": "collabo_cafe",
-      "url": "https://kawaiiuso-info.jp/p26/gengaten/nagoya/"
-    },
-    {
-      "date": "2026-12-12",
-      "dateEnd": "2027-01-11",
-      "title": "放送30周年記念 TVアニメ『名探偵コナン』展",
-      "venue": "金山南ビル美術館棟",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "10:00〜18:30（最終入場18:00）。12/31・1/1休み。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/conanten-anime-30th-anniversary-exhibition-nagoya2026/"
-    },
-    {
-      "date": "2026-10-09",
-      "dateEnd": "2026-11-01",
-      "title": "WIND BREAKER 5th ANNIVERSARY EXHIBITION（ウィンブレ 5周年原画展）",
-      "venue": "名古屋PARCO 南館9F イベントスペース",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "10:00〜20:00（最終日は17:00まで）。前売1,800円／当日2,000円。国内巡回の最終会場。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/wind-breaker-gengaten-tenjikai-nagoya-parco-2026/"
-    },
-    {
-      "date": "2026-10-06",
-      "dateEnd": "2027-02-02",
-      "title": "ガルパン 推し旅コラボVer. ストア in 名古屋",
-      "venue": "アニメイト名古屋店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "『ガールズ＆パンツァー 最終章』の描き下ろしイラストグッズを販売。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/girls-und-panzer-pop-up-store-nagoya-animate-2026/"
-    },
-    {
-      "date": "2026-10-23",
-      "dateEnd": "2027-03-22",
-      "title": "横山美術館所蔵品 優美なるオールドノリタケ×ノリタケ",
-      "venue": "横山美術館",
-      "city": "名古屋市",
-      "category": "工芸",
-      "note": "明治〜昭和のオールドノリタケとノリタケの歩みを紹介。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/80384/"
-    },
-    {
-      "date": "2026-11-04",
-      "dateEnd": "2026-12-21",
-      "title": "塩川いづみ展「12」",
-      "venue": "STUDIO 894",
-      "city": "瀬戸市",
-      "category": "現代美術・イラスト",
-      "note": "干支や星座をモチーフにした陶の立体・タイル作品。11/8に作家トークあり。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/80286/"
-    },
-    {
-      "date": "2026-10-16",
-      "dateEnd": "2026-10-21",
-      "title": "正反対な君と僕 洒落CAFE レトロポップ",
-      "venue": "洒落CAFE 名古屋セントラルパーク店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "名古屋店は10/21までの限定開催。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/seihantai-kimitoboku-cafe-share-cafe-2026-add-info-sdc/"
+      "date": "2026-10-17",
+      "dateEnd": "2026-11-29",
+      "title": "四季にうたえば 出光美術館名品展",
+      "venue": "岡崎市美術博物館",
+      "city": "岡崎市",
+      "category": "絵画・古美術",
+      "note": "長期休館からの再開後を飾る、出光美術館の名品による企画展。",
+      "src": "outermost",
+      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
     },
     {
       "date": "2026-10-22",
@@ -565,6 +411,72 @@
       "url": "https://collabo-cafe.com/events/collabo/symphogear-xv-popupshop-gamers-2026/"
     },
     {
+      "date": "2026-10-23",
+      "dateEnd": "2027-02-28",
+      "title": "和紙を知る　ILLUSION　柴崎幸次のあかり",
+      "venue": "ヤマザキマザック美術館",
+      "city": "名古屋市",
+      "category": "工芸・デザイン",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/80506/"
+    },
+    {
+      "date": "2026-10-23",
+      "dateEnd": "2027-03-22",
+      "title": "横山美術館所蔵品 優美なるオールドノリタケ×ノリタケ",
+      "venue": "横山美術館",
+      "city": "名古屋市",
+      "category": "工芸",
+      "note": "明治〜昭和のオールドノリタケとノリタケの歩みを紹介。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/80384/"
+    },
+    {
+      "date": "2026-10-24",
+      "dateEnd": "2027-01-24",
+      "title": "井田照一展（仮）",
+      "venue": "豊田市美術館",
+      "city": "豊田市",
+      "category": "現代美術・版画",
+      "note": "没後20年、国際的に評価された版画家の仕事をまとめて回顧。",
+      "src": "outermost",
+      "url": "https://www.museum.toyota.aichi.jp/exhibition/"
+    },
+    {
+      "date": "2026-10-24",
+      "dateEnd": "2026-11-15",
+      "title": "小野竹喬と荻須高徳展（前期）",
+      "venue": "稲沢市荻須記念美術館",
+      "city": "稲沢市",
+      "category": "絵画",
+      "note": "日本画と洋画、二人の巨匠を並べて紹介する企画展。",
+      "src": "outermost",
+      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
+    },
+    {
+      "date": "2026-10-24",
+      "dateEnd": "2027-01-24",
+      "title": "長谷川繁 ペイン天狗（仮）",
+      "venue": "豊田市美術館",
+      "city": "豊田市",
+      "category": "現代美術",
+      "note": "",
+      "src": "outermost",
+      "url": "https://www.museum.toyota.aichi.jp/exhibition/"
+    },
+    {
+      "date": "2026-10-30",
+      "dateEnd": "2026-12-13",
+      "title": "没後100年記念 ビゲロー 幻のコレクションと近代日本画の夜明け",
+      "venue": "愛知県美術館",
+      "city": "名古屋市",
+      "category": "絵画",
+      "note": "米国人収集家ウィリアム・ビゲローの「幻のコレクション」がまとまって公開される貴重な機会。",
+      "src": "apmoa",
+      "url": "https://apmoa.museum/exhibition"
+    },
+    {
       "date": "2026-10-30",
       "dateEnd": "2026-11-10",
       "title": "進撃の巨人 × サンリオ POPUP",
@@ -574,17 +486,6 @@
       "note": "10:00〜20:00（最終日は18:00まで）。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/attack-on-titan-sanrio-characters-popup-2026/"
-    },
-    {
-      "date": "2026-11-21",
-      "dateEnd": "2026-11-29",
-      "title": "ゴシックは魔法乙女 コラボカフェ",
-      "venue": "BLUE LEAF CAFÉ 名古屋店（タカシマヤゲートタワーモール2F）",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "名古屋店はドリンクのみ（フード販売なし）。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/gomaotsu-blue-leaf-cafe-2026/"
     },
     {
       "date": "2026-11-03",
@@ -598,26 +499,59 @@
       "url": "https://collabo-cafe.com/events/collabo/haikyu-cafe-and-gallery-winter-2026/"
     },
     {
-      "date": "2026-11-28",
-      "dateEnd": "2026-12-27",
-      "title": "ダンガンロンパ15周年記念展",
-      "venue": "テレピアホール（東桜1丁目）",
-      "city": "名古屋市",
-      "category": "原画展",
-      "note": "ダンガンロンパ15周年記念展の名古屋開催。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/danganronpa-15th-anniversary-exhibition-nagoya2026/"
+      "date": "2026-11-04",
+      "dateEnd": "2026-12-21",
+      "title": "塩川いづみ展「12」",
+      "venue": "STUDIO 894",
+      "city": "瀬戸市",
+      "category": "現代美術・イラスト",
+      "note": "干支や星座をモチーフにした陶の立体・タイル作品。11/8に作家トークあり。",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/80286/"
     },
     {
-      "date": "2026-10-23",
-      "dateEnd": "2027-02-28",
-      "title": "和紙を知る　ILLUSION　柴崎幸次のあかり",
-      "venue": "ヤマザキマザック美術館",
+      "date": "2026-11-05",
+      "dateEnd": "2026-11-24",
+      "title": "桃源暗鬼 × スイパラ第2弾 お月見カフェ",
+      "venue": "COLLABO PARADISE 名古屋パルコ店",
       "city": "名古屋市",
-      "category": "工芸・デザイン",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/tougen-anki-cafe-sweets-paradise-vol2-2026/"
+    },
+    {
+      "date": "2026-11-06",
+      "dateEnd": "2026-11-23",
+      "title": "ホロライブ ポップアップショップ（名古屋会場）",
+      "venue": "会場は後日発表",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "人気VTuberグループ「ホロライブ」のグッズを集めたポップアップショップ。会場は公式発表待ち。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/hololive-popup-shop-tokyo-nagoya-fukuoka-osaka-sapporo2026/"
+    },
+    {
+      "date": "2026-11-07",
+      "dateEnd": "2026-11-15",
+      "title": "遊☆戯☆王ZEXAL ストア",
+      "venue": "ジーストア名古屋",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/yugioh-zexal-popup-shop-2026/"
+    },
+    {
+      "date": "2026-11-14",
+      "dateEnd": "2026-12-01",
+      "title": "稲吉オサム 陶50",
+      "venue": "ギャラリーサンセリテ",
+      "city": "豊橋市",
+      "category": "工芸・陶芸",
       "note": "",
       "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/80506/"
+      "url": "https://artscape.jp/exhibitions/80850/"
     },
     {
       "date": "2026-11-19",
@@ -631,6 +565,50 @@
       "url": "https://collabo-cafe.com/events/collabo/alien-stage-cafe-animate-cafe-exhibition-2026/"
     },
     {
+      "date": "2026-11-20",
+      "dateEnd": "2026-12-22",
+      "title": "BLEACH カフェ",
+      "venue": "名古屋PARCO",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "人気マンガ・アニメ『BLEACH』のコラボカフェ。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/bleach-cafe-the-guest-cafe-osaka-nagoya-2026/"
+    },
+    {
+      "date": "2026-11-21",
+      "dateEnd": "2026-11-29",
+      "title": "ゴシックは魔法乙女 コラボカフェ",
+      "venue": "BLUE LEAF CAFÉ 名古屋店（タカシマヤゲートタワーモール2F）",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "名古屋店はドリンクのみ（フード販売なし）。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/gomaotsu-blue-leaf-cafe-2026/"
+    },
+    {
+      "date": "2026-11-21",
+      "dateEnd": "2027-01-11",
+      "title": "笠井誠一展―色彩と形態が織りなす造形の世界―",
+      "venue": "碧南市藤井達吉現代美術館",
+      "city": "碧南市",
+      "category": "絵画",
+      "note": "",
+      "src": "outermost",
+      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
+    },
+    {
+      "date": "2026-11-28",
+      "dateEnd": "2026-12-27",
+      "title": "ダンガンロンパ15周年記念展",
+      "venue": "テレピアホール（東桜1丁目）",
+      "city": "名古屋市",
+      "category": "原画展",
+      "note": "ダンガンロンパ15周年記念展の名古屋開催。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/danganronpa-15th-anniversary-exhibition-nagoya2026/"
+    },
+    {
       "date": "2026-12-05",
       "dateEnd": "2027-01-24",
       "title": "特別展「葬送のかたち－弥生墳墓と古墳－」",
@@ -640,6 +618,28 @@
       "note": "安城市内の鹿乗川流域遺跡群・桜井古墳群の新発掘成果を紹介。9:00〜17:00、月曜休館。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/81284/"
+    },
+    {
+      "date": "2026-12-12",
+      "dateEnd": "2027-01-31",
+      "title": "パンダコパンダ展",
+      "venue": "名古屋PARCO 西館8F PARCO HALL",
+      "city": "名古屋市",
+      "category": "アニメ・原画展",
+      "note": "高畑勲・宮崎駿の初期作品「パンダコパンダ」の設定画・原画を紹介する体験型展覧会。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/panda-kopanda-gengaten-tenjikai-nagoya-parco-2026/"
+    },
+    {
+      "date": "2026-12-12",
+      "dateEnd": "2027-01-11",
+      "title": "放送30周年記念 TVアニメ『名探偵コナン』展",
+      "venue": "金山南ビル美術館棟",
+      "city": "名古屋市",
+      "category": "アニメ・原画展",
+      "note": "10:00〜18:30（最終入場18:00）。12/31・1/1休み。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/conanten-anime-30th-anniversary-exhibition-nagoya2026/"
     }
   ],
   "collections": [

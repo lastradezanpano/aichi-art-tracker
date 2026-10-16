@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-16",
+  "sources": {
+    "artscape": {
+      "ok": false,
+      "scraped": 0,
+      "error": "TimeoutError: The read operation timed out",
+      "added": 0,
+      "updated": 0,
+      "skipped_budget": 0,
+      "detail_errors": 0
+    },
+    "原画展.info": {
+      "ok": true,
+      "scraped": 18,
+      "error": null,
+      "added": 0,
+      "updated": 0,
+      "skipped_budget": 0,
+      "detail_errors": 0
+    }
+  }
+}
