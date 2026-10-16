@@ -1,8 +1,19 @@
 {
   "last_updated": "2026-10-16",
-  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）（一部ソースは取得失敗のため既存データを維持）",
+  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
+    {
+      "date": "2026-05-29",
+      "title": "企画展「生誕120年 三岸節子展～その挑戦と表現の変遷～」",
+      "venue": "文化のみち 堀美術館",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/68573/",
+      "dateEnd": "2027-01-17"
+    },
     {
       "date": "2026-07-25",
       "dateEnd": "2026-10-18",
@@ -156,6 +167,17 @@
       "note": "世界的に評価される版画家、棟方志功の作品を一挙公開。",
       "src": "museum_or_jp",
       "url": "https://www.museum.or.jp/event?area=pref-23"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "ComoNeプログラム#03 in TOUCH ーふれられる距離で",
+      "venue": "東海国立大学機構 Common Nexus",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/74792/",
+      "dateEnd": "2027-03-19"
     },
     {
       "date": "2026-10-02",
