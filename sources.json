@@ -1,0 +1,97 @@
+{
+  "region": ["愛知"],
+  "updated_note": "各サイトの実際のURLパターンは変更されることがあるため、定期実行時にリンク切れがあれば都度修正すること。美術展にはFANYのような単一の公開JSON APIが存在しないため、複数のアグリゲーターサイトをWebFetchで横断確認する運用が前提。対象は美術館・博物館の展覧会に加えて、アニメ・マンガの原画展／コラボカフェ／ポップアップストアも含む。",
+  "sources": [
+    {
+      "id": "eplus",
+      "name": "イープラス（愛知・アート）",
+      "type": "ticket_platform_genre_pref",
+      "url": "https://eplus.jp/sf/art/tokai/aichi",
+      "notes": "アート・美術館ジャンル×愛知県で絞込済みの静的HTML一覧。チケット制の企画展の販売状況確認に有効。"
+    },
+    {
+      "id": "artscape",
+      "name": "artscape 展覧会情報（愛知）",
+      "type": "aggregator",
+      "url": "https://artscape.jp/exhibitions/?area=chubu-aichi",
+      "notes": "美術専門メディアが運営する展覧会データベース。会期・会場の情報が比較的正確。2ページ目以降は ?area=chubu-aichi&page=2 等でページネーションされる。"
+    },
+    {
+      "id": "artagenda",
+      "name": "アートアジェンダ（愛知県の展覧会）",
+      "type": "aggregator",
+      "url": "https://www.artagenda.jp/exhibition/index?region=23",
+      "notes": "region=23が愛知県。美術館・展覧会の専門データベース。"
+    },
+    {
+      "id": "tokyo_art_beat",
+      "name": "Tokyo Art Beat（愛知県）",
+      "type": "aggregator",
+      "url": "https://www.tokyoartbeat.com/events/localAreaId/5DVozwxjK2CTHKoozxeTMK",
+      "notes": "現代アート・ギャラリー系の情報が強い。一覧ページはJS描画で本文が取得できないことがあるため、個別イベントページを直接WebFetchするか、WebSearchで補完する。"
+    },
+    {
+      "id": "museum_or_jp",
+      "name": "インターネットミュージアム（愛知県）",
+      "type": "aggregator",
+      "url": "https://www.museum.or.jp/event?area=pref-23",
+      "notes": "全国の美術館・博物館の展覧会データベース。area=pref-23が愛知県。"
+    },
+    {
+      "id": "outermost",
+      "name": "OutermostNAGOYA 中部展覧会スケジュール",
+      "type": "aggregator",
+      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/",
+      "notes": "名古屋を中心に個人が運営するアート情報メディア。中部地方（愛知・三重・岐阜・静岡・長野・石川・富山・滋賀・京都）の展覧会が館ごとに通期でまとまっており見通しが良いが、愛知以外の県の展覧会も混在するため必ず会場の都道府県でフィルタする。年度が変わったら新しいスケジュール記事のURLに差し替える必要がある。"
+    },
+    {
+      "id": "apmoa",
+      "name": "愛知県美術館（公式）",
+      "type": "venue_official",
+      "url": "https://apmoa.museum/exhibition",
+      "notes": "愛知芸術文化センター10階。"
+    },
+    {
+      "id": "nagoya_art_museum",
+      "name": "名古屋市美術館（公式）",
+      "type": "venue_official",
+      "url": "https://art-museum.city.nagoya.jp/exhibitions/",
+      "notes": ""
+    },
+    {
+      "id": "toyota_art_museum",
+      "name": "豊田市美術館（公式）",
+      "type": "venue_official",
+      "url": "https://www.museum.toyota.aichi.jp/exhibition/",
+      "notes": "「開催中の展覧会」欄が空でも「開催予定の展覧会」(/exhibition/?t=plan) に情報がある場合があるので両方確認する。"
+    },
+    {
+      "id": "tokugawa_art_museum",
+      "name": "徳川美術館（公式）",
+      "type": "venue_official",
+      "url": "https://www.tokugawa-art-museum.jp/",
+      "notes": ""
+    },
+    {
+      "id": "aitou",
+      "name": "愛知県陶磁美術館（公式）",
+      "type": "venue_official",
+      "url": "https://aitou.museum/tenji/",
+      "notes": "旧URL https://www.pref.aichi.jp/touji/tenji/ は https://aitou.museum/tenji/ に301リダイレクトされる。常設コレクション展は展示替え期ごとに会期が更新されるため都度確認。"
+    },
+    {
+      "id": "gengaten",
+      "name": "原画展.info（愛知県・名古屋タグ）",
+      "type": "aggregator",
+      "url": "https://gengaten.info/tag/aichi/",
+      "notes": "まんが・アニメ・絵本・ゲーム・映画の原画展専門の情報サイト。都道府県タグで絞込済み。一覧に掲載された会期・会場は個別記事側の情報と食い違うことがあるため（例: 2026-09-25にホロライブ関連イベントで確認）、必ず個別記事URLをWebFetchして最終確認すること。"
+    },
+    {
+      "id": "collabo_cafe",
+      "name": "コラボカフェ.com（名古屋タグ）",
+      "type": "aggregator",
+      "url": "https://collabo-cafe.com/events/tag/nagoya/",
+      "notes": "アニメ・マンガ・ゲームのコラボカフェ／ポップアップストア情報。一覧ページの会期・会場は概略のことがあるため、個別イベントページで正確な会場名・会期を確認してから掲載する。会場が「後日発表」のものは、その旨を明記した上で掲載してよい（例: ホロライブ ポップアップショップ 2026年11月）。"
+    }
+  ]
+}
