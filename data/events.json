@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-19",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -13,17 +13,6 @@
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/68573/",
       "dateEnd": "2027-01-17"
-    },
-    {
-      "date": "2026-07-25",
-      "dateEnd": "2026-10-18",
-      "title": "刀根里衣 絵本原画展",
-      "venue": "高浜市やきものの里かわら美術館",
-      "city": "高浜市",
-      "category": "こども・絵本",
-      "note": "国内外で人気の絵本作家、刀根里衣の原画を多数展示。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/73458/"
     },
     {
       "date": "2026-08-21",
@@ -90,17 +79,6 @@
       "note": "日常の風景を詩情豊かに描いた画家の回顧的企画展。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/75693/"
-    },
-    {
-      "date": "2026-09-17",
-      "dateEnd": "2026-10-18",
-      "title": "塊魂×NeCoLabo Cafe",
-      "venue": "NeCoLabo Cafe 名駅三丁目店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "人気ゲーム「塊魂」の世界観を再現したコラボカフェ。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/katamari-damacy-necolabo-cafe-2026/"
     },
     {
       "date": "2026-09-18",
@@ -180,17 +158,6 @@
       "dateEnd": "2027-03-19"
     },
     {
-      "date": "2026-10-02",
-      "dateEnd": "2026-10-18",
-      "title": "にゃんにゃんにゃんこ飯店",
-      "venue": "COLLABO PARADISE 名古屋パルコ店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "名古屋会場は約16日間の限定開催。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/nyannyannyanko-sweets-paradise-cafe-2026/"
-    },
-    {
       "date": "2026-10-03",
       "dateEnd": "2026-11-15",
       "title": "「安城譜代三　三河内藤一族」徳川を支えた戦国の中堅武将",
@@ -211,17 +178,6 @@
       "note": "人気イラストレーター・VTuberしぐれういとファッションブランドのコラボストア。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/shigure-ui-mezzo-piano-popup-2026/"
-    },
-    {
-      "date": "2026-10-03",
-      "dateEnd": "2026-10-18",
-      "title": "ハイスクールD×D ポップアップストア in ゲーマーズ",
-      "venue": "ゲーマーズ名古屋店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/highschool-dxd-hero-gamers-popup-2026/"
     },
     {
       "date": "2026-10-06",
@@ -277,17 +233,6 @@
       "note": "10:00〜20:00（最終日は17:00まで）。前売1,800円／当日2,000円。国内巡回の最終会場。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/wind-breaker-gengaten-tenjikai-nagoya-parco-2026/"
-    },
-    {
-      "date": "2026-10-09",
-      "dateEnd": "2026-10-18",
-      "title": "いのまたむつみ回顧展",
-      "venue": "アルべホール名古屋",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "数々の人気アニメ・ゲーム作品を手がけたイラストレーターの原画120点超を展示。",
-      "src": "gengaten",
-      "url": "https://gengaten.info/2026/10/11053/"
     },
     {
       "date": "2026-10-10",
