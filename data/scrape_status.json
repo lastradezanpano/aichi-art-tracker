@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-10-21",
+  "checked_at": "2026-10-22",
   "sources": {
     "artscape": {
-      "ok": true,
-      "scraped": 26,
-      "error": null,
+      "ok": false,
+      "scraped": 0,
+      "error": "RuntimeError: 0件(サイト構造の変更またはブロックの可能性)",
       "added": 0,
       "updated": 0,
       "skipped_budget": 0,

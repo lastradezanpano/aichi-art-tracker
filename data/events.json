@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-21",
-  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
+  "last_updated": "2026-10-22",
+  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）（一部ソースは取得失敗のため既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
     {
@@ -310,17 +310,6 @@
       "note": "入場無料。10:00〜20:00。",
       "src": "collabo_cafe",
       "url": "https://kawaiiuso-info.jp/p26/gengaten/nagoya/"
-    },
-    {
-      "date": "2026-10-16",
-      "dateEnd": "2026-10-21",
-      "title": "正反対な君と僕 洒落CAFE レトロポップ",
-      "venue": "洒落CAFE 名古屋セントラルパーク店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "名古屋店は10/21までの限定開催。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/seihantai-kimitoboku-cafe-share-cafe-2026-add-info-sdc/"
     },
     {
       "date": "2026-10-17",
