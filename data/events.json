@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-25",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -497,6 +497,17 @@
       "note": "",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/yugioh-zexal-popup-shop-2026/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "国宝 源氏物語絵巻 横笛・宿木（二）｜特別公開",
+      "venue": "徳川美術館",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/81882/",
+      "dateEnd": "2026-11-29"
     },
     {
       "date": "2026-11-14",
