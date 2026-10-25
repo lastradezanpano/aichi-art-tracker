@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-10-26",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -92,17 +92,6 @@
       "url": "https://artscape.jp/exhibitions/73611/"
     },
     {
-      "date": "2026-09-18",
-      "dateEnd": "2026-10-25",
-      "title": "深堀隆介展―「金魚の唄」―山田憲司･北川啓介との共創",
-      "venue": "文化のみち橦木館",
-      "city": "名古屋市",
-      "category": "現代美術",
-      "note": "器の中に金魚が泳ぐ超写実樹脂絵画で知られる深堀隆介と建築家によるコラボ企画。",
-      "src": "artscape",
-      "url": "https://shumokukan.jp/news/kingyonouta.html"
-    },
-    {
       "date": "2026-09-19",
       "dateEnd": "2026-11-29",
       "title": "ゴッホの跳ね橋と印象派の画家たち ヴァルラフ=リヒャルツ美術館所蔵",
@@ -167,17 +156,6 @@
       "note": "徳川家康を支えた三河武士団の実像を紹介。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/78583/"
-    },
-    {
-      "date": "2026-10-03",
-      "dateEnd": "2026-10-25",
-      "title": "しぐれうい×mezzo piano ポップアップストア",
-      "venue": "名古屋PARCO",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "人気イラストレーター・VTuberしぐれういとファッションブランドのコラボストア。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/shigure-ui-mezzo-piano-popup-2026/"
     },
     {
       "date": "2026-10-06",
@@ -321,17 +299,6 @@
       "note": "『だるまさんが』シリーズなどで愛される絵本作家の原画を一堂に。",
       "src": "outermost",
       "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-10-17",
-      "dateEnd": "2026-10-25",
-      "title": "劉諮詢室 POP UP SHOP",
-      "venue": "イベントスペース by マルイ",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/laulu-popupshop-oioi-2026/"
     },
     {
       "date": "2026-10-17",
