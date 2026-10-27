@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -46,17 +46,6 @@
       "note": "ユニークなタイトルで話題。豊臣秀吉と名古屋の関わりを紹介。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/73473/"
-    },
-    {
-      "date": "2026-09-05",
-      "dateEnd": "2026-10-26",
-      "title": "平澤まりこ個展「for my dear Companions」",
-      "venue": "STUDIO 894",
-      "city": "瀬戸市",
-      "category": "現代美術・イラスト",
-      "note": "絵本や装画で知られるイラストレーターの個展。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/76732/"
     },
     {
       "date": "2026-09-11",
