@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-01",
-  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）（一部ソースは取得失敗のため既存データを維持）",
+  "last_updated": "2026-11-02",
+  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
     {
@@ -24,28 +24,6 @@
       "note": "琉球王国の宮廷装束を彩った紅型を紹介。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/76709/"
-    },
-    {
-      "date": "2026-09-05",
-      "dateEnd": "2026-11-01",
-      "title": "リトアニア―バルトの森に響く歌―",
-      "venue": "名古屋市博物館",
-      "city": "名古屋市",
-      "category": "歴史・民俗",
-      "note": "バルト三国のひとつリトアニアの文化を紹介する珍しい企画展。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/73456/"
-    },
-    {
-      "date": "2026-09-05",
-      "dateEnd": "2026-11-01",
-      "title": "名古屋には秀吉がおるでよ！",
-      "venue": "名古屋市博物館",
-      "city": "名古屋市",
-      "category": "歴史・博物",
-      "note": "ユニークなタイトルで話題。豊臣秀吉と名古屋の関わりを紹介。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/73473/"
     },
     {
       "date": "2026-09-11",
@@ -189,28 +167,6 @@
       "note": "博物学者としても知られた尾張徳川家19代・義親の旅と収集を辿る。",
       "src": "museum_or_jp",
       "url": "https://www.museum.or.jp/event?area=pref-23"
-    },
-    {
-      "date": "2026-10-09",
-      "dateEnd": "2026-11-01",
-      "title": "WIND BREAKER 5th ANNIVERSARY EXHIBITION（ウィンブレ 5周年原画展）",
-      "venue": "名古屋PARCO 南館9F イベントスペース",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "10:00〜20:00（最終日は17:00まで）。前売1,800円／当日2,000円。国内巡回の最終会場。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/wind-breaker-gengaten-tenjikai-nagoya-parco-2026/"
-    },
-    {
-      "date": "2026-10-10",
-      "dateEnd": "2026-11-01",
-      "title": "マケイン ゆめかわフェア in アニメイト",
-      "venue": "アニメイト名古屋店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "TVアニメ『負けヒロインが多すぎる!』のフェア。対象購入で特製しおりをプレゼント。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/makeine-yumekawa-fair-animate-2026/"
     },
     {
       "date": "2026-10-10",
