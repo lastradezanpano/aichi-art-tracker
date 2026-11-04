@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -211,17 +211,6 @@
       "note": "",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/heroaca-cafe-we-are-hero-holics-box-cafe-2026/"
-    },
-    {
-      "date": "2026-10-16",
-      "dateEnd": "2026-11-03",
-      "title": "可愛い嘘のカワウソ 原画展 in 名古屋",
-      "venue": "名古屋PARCO 西館8F イベントスペース",
-      "city": "名古屋市",
-      "category": "アニメ・原画展",
-      "note": "入場無料。10:00〜20:00。",
-      "src": "collabo_cafe",
-      "url": "https://kawaiiuso-info.jp/p26/gengaten/nagoya/"
     },
     {
       "date": "2026-10-17",
