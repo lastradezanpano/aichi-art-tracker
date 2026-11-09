@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08",
+  "last_updated": "2026-11-09",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -37,17 +37,6 @@
       "url": "https://eplus.jp/sf/detail/4307180002-P0030002P021001"
     },
     {
-      "date": "2026-09-12",
-      "dateEnd": "2026-11-08",
-      "title": "小林徳三郎―詩のような日常宇宙。―",
-      "venue": "碧南市藤井達吉現代美術館",
-      "city": "碧南市",
-      "category": "現代美術",
-      "note": "日常の風景を詩情豊かに描いた画家の回顧的企画展。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/75693/"
-    },
-    {
       "date": "2026-09-18",
       "dateEnd": "2026-11-23",
       "title": "企画展「書の魅力～書の鑑賞への誘い～」",
@@ -79,17 +68,6 @@
       "note": "所蔵の茶碗を通して「見立て」と「連想」を読み解く企画展。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/79341/"
-    },
-    {
-      "date": "2026-09-19",
-      "dateEnd": "2026-11-08",
-      "title": "深沢紅子展―親しき人と野の花と",
-      "venue": "一宮市三岸節子記念美術館",
-      "city": "一宮市",
-      "category": "絵画",
-      "note": "花や身近な人々をモチーフにした水彩画家の展覧会。",
-      "src": "museum_or_jp",
-      "url": "https://www.museum.or.jp/event?area=pref-23"
     },
     {
       "date": "2026-09-26",
