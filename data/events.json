@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10",
+  "last_updated": "2026-11-11",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -299,17 +299,6 @@
       "note": "米国人収集家ウィリアム・ビゲローの「幻のコレクション」がまとまって公開される貴重な機会。",
       "src": "apmoa",
       "url": "https://apmoa.museum/exhibition"
-    },
-    {
-      "date": "2026-10-30",
-      "dateEnd": "2026-11-10",
-      "title": "進撃の巨人 × サンリオ POPUP",
-      "venue": "ジェイアール名古屋タカシマヤ 8F 特設会場",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "10:00〜20:00（最終日は18:00まで）。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/attack-on-titan-sanrio-characters-popup-2026/"
     },
     {
       "date": "2026-11-03",
