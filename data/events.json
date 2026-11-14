@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-14",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -277,6 +277,17 @@
       "note": "日本画と洋画、二人の巨匠を並べて紹介する企画展。",
       "src": "outermost",
       "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "没後20年 井田照一展",
+      "venue": "豊田市美術館",
+      "city": "豊田市",
+      "category": "展覧会",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/83220/",
+      "dateEnd": "2027-01-24"
     },
     {
       "date": "2026-10-24",
