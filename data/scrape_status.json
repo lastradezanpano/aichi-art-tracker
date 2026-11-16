@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-15",
+  "checked_at": "2026-11-16",
   "sources": {
     "artscape": {
       "ok": true,
-      "scraped": 25,
+      "scraped": 23,
       "error": null,
       "added": 0,
       "updated": 0,

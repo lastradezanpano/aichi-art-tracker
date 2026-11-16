@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-15",
+  "last_updated": "2026-11-16",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -92,17 +92,6 @@
       "dateEnd": "2027-03-19"
     },
     {
-      "date": "2026-10-03",
-      "dateEnd": "2026-11-15",
-      "title": "「安城譜代三　三河内藤一族」徳川を支えた戦国の中堅武将",
-      "venue": "安城市歴史博物館",
-      "city": "安城市",
-      "category": "歴史",
-      "note": "徳川家康を支えた三河武士団の実像を紹介。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/78583/"
-    },
-    {
       "date": "2026-10-06",
       "dateEnd": "2027-02-02",
       "title": "ガルパン 推し旅コラボVer. ストア in 名古屋",
@@ -123,17 +112,6 @@
       "note": "約60点の所蔵作品で画家とモデルの関係を探る。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/76583/"
-    },
-    {
-      "date": "2026-10-08",
-      "dateEnd": "2026-11-15",
-      "title": "ときめく箱",
-      "venue": "徳川美術館",
-      "city": "名古屋市",
-      "category": "工芸",
-      "note": "大名家に伝わる意匠を凝らした「箱」に着目した企画展。",
-      "src": "museum_or_jp",
-      "url": "https://www.museum.or.jp/event?area=pref-23"
     },
     {
       "date": "2026-10-08",
@@ -192,17 +170,6 @@
     },
     {
       "date": "2026-10-17",
-      "dateEnd": "2026-11-15",
-      "title": "かがくいひろしの世界展",
-      "venue": "豊橋市美術博物館",
-      "city": "豊橋市",
-      "category": "こども・絵本",
-      "note": "『だるまさんが』シリーズなどで愛される絵本作家の原画を一堂に。",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-10-17",
       "dateEnd": "2026-11-29",
       "title": "四季にうたえば 出光美術館名品展",
       "venue": "岡崎市美術博物館",
@@ -222,17 +189,6 @@
       "note": "11:30〜21:10。80分制。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/nijisanji-speciale-rabbiale-animate-cafe-2026/"
-    },
-    {
-      "date": "2026-10-23",
-      "dateEnd": "2026-11-15",
-      "title": "シンフォギアXV POP UP SHOP in ゲーマーズ",
-      "venue": "ゲーマーズ名古屋店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "「レースエプロン」をテーマにした描き下ろしグッズを先行販売。",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/symphogear-xv-popupshop-gamers-2026/"
     },
     {
       "date": "2026-10-23",
@@ -266,17 +222,6 @@
       "note": "没後20年、国際的に評価された版画家の仕事をまとめて回顧。",
       "src": "outermost",
       "url": "https://www.museum.toyota.aichi.jp/exhibition/"
-    },
-    {
-      "date": "2026-10-24",
-      "dateEnd": "2026-11-15",
-      "title": "小野竹喬と荻須高徳展（前期）",
-      "venue": "稲沢市荻須記念美術館",
-      "city": "稲沢市",
-      "category": "絵画",
-      "note": "日本画と洋画、二人の巨匠を並べて紹介する企画展。",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
     },
     {
       "date": "2026-10-24",
@@ -354,17 +299,6 @@
       "note": "人気VTuberグループ「ホロライブ」のグッズを集めたポップアップショップ。会場は公式発表待ち。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/hololive-popup-shop-tokyo-nagoya-fukuoka-osaka-sapporo2026/"
-    },
-    {
-      "date": "2026-11-07",
-      "dateEnd": "2026-11-15",
-      "title": "遊☆戯☆王ZEXAL ストア",
-      "venue": "ジーストア名古屋",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/yugioh-zexal-popup-shop-2026/"
     },
     {
       "date": "2026-11-14",
