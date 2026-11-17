@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-17",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -13,17 +13,6 @@
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/68573/",
       "dateEnd": "2027-01-17"
-    },
-    {
-      "date": "2026-08-21",
-      "dateEnd": "2026-11-16",
-      "title": "松坂屋史料室企画展Vol.67 紅型II―琉球王国の装い―",
-      "venue": "松坂屋史料室",
-      "city": "名古屋市",
-      "category": "染織・工芸",
-      "note": "琉球王国の宮廷装束を彩った紅型を紹介。",
-      "src": "artscape",
-      "url": "https://artscape.jp/exhibitions/76709/"
     },
     {
       "date": "2026-09-11",
