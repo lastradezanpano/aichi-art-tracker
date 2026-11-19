@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -365,6 +365,17 @@
       "note": "ダンガンロンパ15周年記念展の名古屋開催。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/danganronpa-15th-anniversary-exhibition-nagoya2026/"
+    },
+    {
+      "date": "2026-11-28",
+      "title": "館蔵品展「○○をさがせ！ －見えないものの だいそうさく！－」",
+      "venue": "高浜市やきものの里かわら美術館・図書館",
+      "city": "高浜市",
+      "category": "工芸・陶芸",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/84026/",
+      "dateEnd": "2027-02-14"
     },
     {
       "date": "2026-12-05",
