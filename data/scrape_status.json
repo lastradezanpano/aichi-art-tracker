@@ -38,11 +38,14 @@
       "ok": true,
       "scraped": 48,
       "error": null,
-      "added": 0,
+      "added": 2,
       "updated": 0,
       "skipped_budget": 0,
       "detail_errors": 0,
-      "added_titles": [],
+      "added_titles": [
+        "BIGBANG 2026-2027 WORLD TOUR XX : COSMOS IN JAPAN POP-UP STORE",
+        "第2弾期間 ノベルティ引換"
+      ],
       "needs_review": [
         {
           "title": "おねがいアイプリ × 洒落CAFE 12月7日より3都市で順次開催!",
