@@ -48,6 +48,17 @@
       "url": "https://artscape.jp/exhibitions/79341/"
     },
     {
+      "date": "2026-09-26",
+      "dateEnd": "2027-01-31",
+      "title": "一挙公開 棟方志功",
+      "venue": "豊田市民芸館",
+      "city": "豊田市",
+      "category": "版画・工芸",
+      "note": "日本民藝館所蔵の棟方作品を再構成。Ⅱ期は11/28から（11/24〜27は展示替えで休み）",
+      "src": "aichinow",
+      "url": "https://aichinow.pref.aichi.jp/events/detail/4152/"
+    },
+    {
       "date": "2026-10-01",
       "title": "ComoNeプログラム#03 in TOUCH ーふれられる距離で",
       "venue": "東海国立大学機構 Common Nexus",
@@ -93,6 +104,17 @@
     },
     {
       "date": "2026-10-10",
+      "dateEnd": "2026-12-06",
+      "title": "企画展「戦国を生きる 細川家と永青文庫の名宝」",
+      "venue": "豊田市博物館",
+      "city": "豊田市",
+      "category": "歴史・工芸",
+      "note": "細川家伝来の美術品を収める永青文庫の名品を紹介。",
+      "src": "aichinow",
+      "url": "https://aichinow.pref.aichi.jp/events/detail/4140/"
+    },
+    {
+      "date": "2026-10-10",
       "dateEnd": "2026-12-20",
       "title": "夢見る建築―中国古代の明器に宿る建築の断片",
       "venue": "愛知県陶磁美術館",
@@ -105,18 +127,7 @@
     {
       "date": "2026-10-10",
       "dateEnd": "2026-12-06",
-      "title": "永青文庫の名品（仮）",
-      "venue": "豊田市博物館",
-      "city": "豊田市",
-      "category": "歴史・工芸",
-      "note": "細川家伝来の美術品を収める永青文庫の名品を紹介。",
-      "src": "outermost",
-      "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
-    },
-    {
-      "date": "2026-10-10",
-      "dateEnd": "2026-12-06",
-      "title": "重文「渡辺崋山像」保存修理記念 企画展",
+      "title": "重文「渡辺崋山像」保存修理記念 企画展「未来へつなぐ、重要文化財渡辺崋山関係資料」",
       "venue": "田原市博物館",
       "city": "田原市",
       "category": "絵画・歴史",
@@ -170,17 +181,6 @@
     },
     {
       "date": "2026-10-24",
-      "dateEnd": "2027-01-24",
-      "title": "井田照一展（仮）",
-      "venue": "豊田市美術館",
-      "city": "豊田市",
-      "category": "現代美術・版画",
-      "note": "没後20年、国際的に評価された版画家の仕事をまとめて回顧。",
-      "src": "outermost",
-      "url": "https://www.museum.toyota.aichi.jp/exhibition/"
-    },
-    {
-      "date": "2026-10-24",
       "title": "没後20年 井田照一展",
       "venue": "豊田市美術館",
       "city": "豊田市",
@@ -193,7 +193,7 @@
     {
       "date": "2026-10-24",
       "dateEnd": "2027-01-24",
-      "title": "長谷川繁 ペイン天狗（仮）",
+      "title": "長谷川 繁 ペイン天狗",
       "venue": "豊田市美術館",
       "city": "豊田市",
       "category": "現代美術",
@@ -312,6 +312,28 @@
       "url": "https://www.outermosterm.com/2026-2027-chubu-exhibition-schedule/"
     },
     {
+      "date": "2026-11-21",
+      "dateEnd": "2026-12-13",
+      "title": "負けヒロインが多すぎる! ポップアップストア",
+      "venue": "ゲーマーズ名古屋店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/makeine-pop-up-store-gamers-tokyo-aichi-osaka-2026/"
+    },
+    {
+      "date": "2026-11-26",
+      "dateEnd": "2026-12-14",
+      "title": "ししわたクッキング Collaboration Cafe in SMILE BASE CAFE（ホロライブ）",
+      "venue": "SMILE BASE CAFE 名古屋栄店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/hololive-cafe-smile-base-cafe-shishiwata-cooking-2026/"
+    },
+    {
       "date": "2026-11-27",
       "title": "館蔵品展「いのち息づく書」",
       "venue": "春日井市道風記念館",
@@ -345,6 +367,17 @@
       "dateEnd": "2027-02-14"
     },
     {
+      "date": "2026-12-04",
+      "dateEnd": "2026-12-13",
+      "title": "ガールズバンドクライ POP UP SHOP",
+      "venue": "メロンブックス名古屋店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/girls-band-cry-sukajan-popup-kotobukiya-melonbooks-2026/"
+    },
+    {
       "date": "2026-12-05",
       "dateEnd": "2027-01-24",
       "title": "特別展「葬送のかたち－弥生墳墓と古墳－」",
@@ -354,6 +387,39 @@
       "note": "安城市内の鹿乗川流域遺跡群・桜井古墳群の新発掘成果を紹介。9:00〜17:00、月曜休館。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/81284/"
+    },
+    {
+      "date": "2026-12-09",
+      "dateEnd": "2026-12-15",
+      "title": "「君の好きは無敵」POP UP SHOP in 名古屋",
+      "venue": "ジェイアール名古屋タカシマヤ 8F 中央エスカレーター横 特設会場",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/kiminosukihamuteki-dec-popup-shop-jr-nagoya-takashimaya-2026/"
+    },
+    {
+      "date": "2026-12-10",
+      "dateEnd": "2027-01-22",
+      "title": "The 50th Anniversary OSAMU GOODS展",
+      "venue": "名古屋市美術館",
+      "city": "名古屋市",
+      "category": "デザイン・イラスト",
+      "note": "館内のコーヒーショップでコラボメニューあり",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/osamu-goods-50th-exhibition-nagoya-2026-2027/"
+    },
+    {
+      "date": "2026-12-12",
+      "dateEnd": "2026-12-20",
+      "title": "しぐれうい in 中部電力MIRAI TOWER",
+      "venue": "中部電力MIRAI TOWER 3F 特設会場",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/shigure-ui-chubu-electric-mirai-tower-2026/"
     },
     {
       "date": "2026-12-12",
@@ -376,6 +442,28 @@
       "note": "10:00〜18:30（最終入場18:00）。12/31・1/1休み。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/conanten-anime-30th-anniversary-exhibition-nagoya2026/"
+    },
+    {
+      "date": "2027-01-16",
+      "dateEnd": "2027-02-14",
+      "title": "創刊50周年記念LaLa原画展〜魅惑のクリエイション〜",
+      "venue": "松坂屋名古屋店 南館8階 マツザカヤホール",
+      "city": "名古屋市",
+      "category": "アニメ・原画展",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/lala-50th-anniversary-exhibition-matsuzakaya-nagoya-2027/"
+    },
+    {
+      "date": "2027-01-22",
+      "dateEnd": "2027-01-31",
+      "title": "ドコムスチャンネルPOP UP STORE : おでかけコレクション2026",
+      "venue": "名古屋セントラルパーク 地下街イベントスペースbyマルイ",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/dkomusu-odekake-collection-popup-marui-2026/"
     }
   ],
   "collections": [

@@ -15,6 +15,7 @@ import html as html_lib
 import json
 import re
 import time
+import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -84,10 +85,17 @@ def clean_title(title: str) -> str:
     return title
 
 
-NOISE_RE = re.compile(r"[\s!！?？「」『』（）()\[\]【】～〜\-－–—ー・:：、。,.&＆×]")
+NOISE_RE = re.compile(r"[\s!！?？「」『』（）()\[\]【】～〜\-－–—ー・:：、。,.&＆×|｜\"“”'’―─]")
+# 「（仮）」や「没後20年」「企画展」など、同じ展覧会でも情報源によって付いたり付かなかったりする語
+TITLE_AFFIX_RE = re.compile(
+    r"[（(]仮[)）]|(?:没後|生誕|開館|創刊|放送|誕生|連載)\s*\d+\s*(?:周)?年(?:記念)?|"
+    r"^(?:企画展|特別展|特別企画展|館蔵品展|所蔵品展|コレクション展)"
+)
 
 
 def title_key(title: str) -> str:
+    title = unicodedata.normalize("NFKC", title).replace("〇", "○")
+    title = TITLE_AFFIX_RE.sub("", title.strip())
     return NOISE_RE.sub("", title).lower()
 
 
@@ -114,6 +122,10 @@ def guess_category(title: str, venue: str) -> str:
         return "歴史・博物"
     if "現代" in venue:
         return "現代美術"
+    if re.search(r"科学館|自然|植物|化石|コンクリーション|寄生虫", title + venue):
+        return "科学・自然"
+    if re.search(r"刀|甲冑|武具", title + venue):
+        return "歴史・博物"
     return "展覧会"
 
 
@@ -261,6 +273,228 @@ def fetch_gengaten_venue(detail_url: str) -> str:
     return clean_text(match.group(1)) if match else ""
 
 
+# ---------------------------------------------------------------- インターネットミュージアム
+
+MUSEUM_LIST = "https://www.museum.or.jp/event?area=pref-23"
+MUSEUM_MAX_PAGES = 6
+MUSEUM_ITEM_SPLIT = '<div class="c-eventItem" '
+MUSEUM_URL_RE = re.compile(r'href="(/event/(\d+))"')
+MUSEUM_TITLE_RE = re.compile(r'c-eventItem_museum[^>]*>\s*<a[^>]*>(.*?)</a>', re.DOTALL)
+MUSEUM_PLACE_RE = re.compile(r'c-eventItem_event[^>]*>(.*?)</div>', re.DOTALL)
+MUSEUM_DURATION_RE = re.compile(r'c-eventItem_duration[^>]*>(.*?)</div>', re.DOTALL)
+POSTAL_ADDRESS_RE = re.compile(r"〒\s*\d{3}-?\d{4}\s*(愛知県[^\s<]+)")
+# 1年以上先の展覧会は情報が変わりやすく一覧が長くなるため、近づいてから載せる
+MUSEUM_HORIZON_DAYS = 365
+
+
+def parse_museum_list(html: str) -> list[dict]:
+    results = []
+    for block in html.split(MUSEUM_ITEM_SPLIT)[1:]:
+        url_m = MUSEUM_URL_RE.search(block)
+        title_m = MUSEUM_TITLE_RE.search(block)
+        place_m = MUSEUM_PLACE_RE.search(block)
+        dur_m = MUSEUM_DURATION_RE.search(block)
+        if not (url_m and title_m and place_m and dur_m):
+            continue
+        place = clean_text(place_m.group(1))
+        venue, _, pref = place.rpartition("|")
+        if pref.strip() != "愛知県":
+            continue
+        period = parse_ja_period(re.sub(r"[（(][^）)]*[）)]", "", clean_text(dur_m.group(1))))
+        if not period:
+            continue
+        results.append({
+            "url": "https://www.museum.or.jp" + url_m.group(1),
+            "museum_id": url_m.group(2),
+            "title": clean_title(title_m.group(1)),
+            "venue": venue.strip(),
+            "date": period[0],
+            "dateEnd": period[1],
+        })
+    return results
+
+
+def fetch_museum_list() -> list[dict]:
+    items: list[dict] = []
+    seen: set[str] = set()
+    horizon = (datetime.now(timezone(timedelta(hours=9))).date()
+               + timedelta(days=MUSEUM_HORIZON_DAYS)).isoformat()
+    for page in range(1, MUSEUM_MAX_PAGES + 1):
+        url = MUSEUM_LIST if page == 1 else f"{MUSEUM_LIST}&page={page}"
+        page_items = parse_museum_list(http_get(url))
+        fresh = [i for i in page_items if i["museum_id"] not in seen]
+        if not fresh:
+            break
+        for item in fresh:
+            seen.add(item["museum_id"])
+        items.extend(fresh)
+    return [i for i in items if i["date"] <= horizon]
+
+
+def resolve_museum(item: dict) -> dict | None:
+    page = re.sub(r"<script.*?</script>", "", http_get(item["url"]), flags=re.DOTALL)
+    match = POSTAL_ADDRESS_RE.search(clean_text(page))
+    address = match.group(1) if match else ""
+    event = {
+        "date": item["date"],
+        "title": item["title"],
+        "venue": item["venue"],
+        "city": city_from_address(address),
+        "category": guess_category(item["title"], item["venue"]),
+        "note": "",
+        "src": "museum_or_jp",
+        "url": item["url"],
+    }
+    if item["dateEnd"]:
+        event["dateEnd"] = item["dateEnd"]
+    return event
+
+
+# ---------------------------------------------------------------- コラボカフェ.com
+
+COLLABO_LIST = "https://collabo-cafe.com/events/tag/nagoya/"
+COLLABO_MAX_PAGES = 3
+COLLABO_ARTICLE_RE = re.compile(
+    r'<article class="post-list[^"]*"[^>]*>\s*<a href="(https://collabo-cafe\.com/events/[^"]+)"'
+    r'[^>]*title="([^"]*)"(.*?)</article>',
+    re.DOTALL,
+)
+COLLABO_CAT_RE = re.compile(r'<span class="cat-name[^"]*">(.*?)</span>', re.DOTALL)
+COLLABO_LIST_PERIOD_RE = re.compile(r'<span class="event-date[^"]*">\s*期間\s*:\s*(.*?)</span>', re.DOTALL)
+COLLABO_TABLE_RE = re.compile(r'<table class="cc-table[^"]*"[^>]*>(.*?)</table>', re.DOTALL)
+COLLABO_ROW_RE = re.compile(r"<th[^>]*>(.*?)</th>\s*<td[^>]*>(.*?)</td>", re.DOTALL)
+COLLABO_CAPTION_RE = re.compile(r"<caption>(.*?)</caption>", re.DOTALL)
+AICHI_WORD_RE = re.compile(r"愛知|名古屋")
+BRACKET_RE = re.compile(r"^【([^】]*)】\s*")
+VAGUE_VENUE_RE = re.compile(r"全国|各店|各会場|店舗|ほか|他|後日|未定|予定")
+CITY_IN_TEXT_RE = re.compile(r"(名古屋|豊橋|岡崎|一宮|瀬戸|春日井|豊川|刈谷|豊田|安城|西尾|"
+                             r"小牧|稲沢|東海|大府|知多|長久手|日進|常滑|半田|犬山|江南|蒲郡)")
+
+
+def parse_collabo_list(html: str) -> list[dict]:
+    results = []
+    for url, raw_title, body in COLLABO_ARTICLE_RE.findall(html):
+        period_m = COLLABO_LIST_PERIOD_RE.search(body)
+        period = parse_ja_period(clean_text(period_m.group(1))) if period_m else None
+        cat_m = COLLABO_CAT_RE.search(body)
+        results.append({
+            "url": url,
+            "title": clean_title(raw_title),
+            "list_category": clean_text(cat_m.group(1)) if cat_m else "",
+            # 一覧の期間は全会場まとめた概略。期限切れ判定だけに使い、掲載値は詳細ページから取る
+            "date": period[0] if period else "9999-12-31",
+            "dateEnd": (period[1] or "") if period else "",
+        })
+    return results
+
+
+def fetch_collabo_list() -> list[dict]:
+    items: list[dict] = []
+    seen: set[str] = set()
+    for page in range(1, COLLABO_MAX_PAGES + 1):
+        url = COLLABO_LIST if page == 1 else f"{COLLABO_LIST}page/{page}/"
+        try:
+            page_items = parse_collabo_list(http_get(url))
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404 and page > 1:
+                break
+            raise
+        fresh = [i for i in page_items if i["url"] not in seen]
+        if not fresh:
+            break
+        for item in fresh:
+            seen.add(item["url"])
+        items.extend(fresh)
+    return items
+
+
+def split_lines(cell: str) -> list[str]:
+    return [t for t in (clean_text(p) for p in re.split(r"<br\s*/?>|</p>|</li>", cell)) if t]
+
+
+def collabo_category(list_category: str, title: str) -> str:
+    text = list_category + title
+    if re.search(r"原画|展示会|展$|展 |展覧会", text):
+        return "アニメ・原画展"
+    if "カフェ" in text:
+        return "コラボカフェ"
+    return "ポップアップ・グッズ"
+
+
+class NeedsReview(Exception):
+    """自動では会場・会期を1つに確定できない(Claudeまたは人の確認が必要)"""
+
+
+def resolve_collabo(item: dict) -> dict | None:
+    page = http_get(item["url"])
+    # 記事には特典期間などの表も並ぶため、「期間」と「会場」の両方の欄がある表(開催概要)を使う
+    table_m = period_cell = venue_cell = None
+    for candidate in COLLABO_TABLE_RE.finditer(page):
+        rows = {clean_text(k): v for k, v in COLLABO_ROW_RE.findall(candidate.group(1))}
+        period_cell = next((v for k, v in rows.items() if "期間" in k or "日程" in k), "")
+        venue_cell = next((v for k, v in rows.items() if "会場" in k or "店舗" in k or "場所" in k), "")
+        if period_cell and venue_cell:
+            table_m = candidate
+            break
+    if not table_m:
+        raise NeedsReview("開催概要の表(期間・会場)が見つからない")
+
+    venue_lines = split_lines(venue_cell)
+    aichi_lines = [l for l in venue_lines if AICHI_WORD_RE.search(l)]
+    has_brackets = any(BRACKET_RE.match(l) for l in venue_lines)
+    if len(aichi_lines) == 1:
+        venue_line = aichi_lines[0]
+    elif not aichi_lines and len(venue_lines) == 1 and not has_brackets:
+        venue_line = venue_lines[0]  # 名古屋タグの記事で会場が1か所だけ
+    elif not aichi_lines:
+        return None  # 愛知の会場がない(名古屋タグでも他県のみの記事がある)
+    else:
+        raise NeedsReview(f"愛知の会場が複数({len(aichi_lines)}か所)")
+    bracket_m = BRACKET_RE.match(venue_line)
+    region = bracket_m.group(1) if bracket_m else ""
+    venue = BRACKET_RE.sub("", venue_line).strip()
+    if not venue or VAGUE_VENUE_RE.search(venue):
+        raise NeedsReview(f"会場が確定していない: {venue_line}")
+
+    period_lines = split_lines(period_cell)
+    ranged = [l for l in period_lines if FULL_DATE_RE.search(l) or MONTH_DAY_RE.search(l)]
+    if len(ranged) > 1:
+        # 会場ごとに期間が違う書き方。愛知の会場名・地域名を含む行だけを使う
+        keys = [k for k in (region, venue[:6], "名古屋", "愛知") if k]
+        ranged = [l for l in ranged if any(k in l for k in keys)]
+    if len(ranged) != 1:
+        raise NeedsReview("愛知会場の期間を1つに確定できない")
+    period_text = ranged[0]
+    if not FULL_DATE_RE.search(period_text):
+        year_m = FULL_DATE_RE.search(clean_text(period_cell))
+        if not year_m:
+            raise NeedsReview("期間に年の記載がない")
+        period_text = f"{year_m.group(1)}年{BRACKET_RE.sub('', period_text)}"
+    period = parse_ja_period(BRACKET_RE.sub("", period_text))
+    if not period:
+        raise NeedsReview(f"期間を読み取れない: {period_text}")
+
+    caption_m = COLLABO_CAPTION_RE.search(table_m.group(1))
+    title = item["title"]
+    if caption_m:
+        caption = re.sub(r"\s*(開催概要|概要|詳細)$", "", clean_text(caption_m.group(1)))
+        title = caption.strip("「」『』 ") or title
+    city_m = CITY_IN_TEXT_RE.search(region + venue)
+    event = {
+        "date": period[0],
+        "title": title,
+        "venue": venue,
+        "city": city_m.group(1) + "市" if city_m else "",
+        "category": collabo_category(item["list_category"], title),
+        "note": "",
+        "src": "collabo_cafe",
+        "url": item["url"],
+    }
+    if period[1]:
+        event["dateEnd"] = period[1]
+    return event
+
+
 # ---------------------------------------------------------------- 統合処理
 
 def event_end(event: dict) -> str:
@@ -284,13 +518,12 @@ def find_match(candidate: dict, events: list[dict]) -> dict | None:
 
 
 def merge_source(events: list[dict], scraped: list[dict], src: str, today: str,
-                 resolve_new, stats: dict) -> None:
+                 resolve_new, stats: dict, budget: int = MAX_DETAIL_FETCHES) -> None:
     """取得した公演を既存データへ反映する。
 
     既存の公演は category/note/url などClaudeが整えた情報を保持し、同じ情報源由来の
     ものに限り会期だけ最新へ更新する。見つからない既存公演は(期限切れ以外)削除しない。
     """
-    budget = MAX_DETAIL_FETCHES
     for item in scraped:
         if event_end(item) < today:
             continue
@@ -312,13 +545,21 @@ def merge_source(events: list[dict], scraped: list[dict], src: str, today: str,
         budget -= 1
         try:
             new_event = resolve_new(item)
+        except NeedsReview as exc:
+            stats["needs_review"].append({"title": item["title"], "url": item["url"], "reason": str(exc)})
+            continue
         except Exception as exc:  # noqa: BLE001
             stats["detail_errors"] += 1
             print(f"[warn] 詳細取得に失敗したため新規追加を見送り: {item['title']} ({exc!r})")
             continue
-        if new_event:
-            events.append(new_event)
-            stats["added"] += 1
+        if not new_event or event_end(new_event) < today:
+            continue
+        # 一覧のタイトルと正式名が違う場合に備え、詳細から作った情報でもう一度重複を確認する
+        if find_match(new_event, events):
+            continue
+        events.append(new_event)
+        stats["added"] += 1
+        stats["added_titles"].append(new_event["title"])
 
 
 def resolve_artscape(item: dict) -> dict | None:
@@ -361,9 +602,12 @@ def resolve_gengaten(item: dict) -> dict | None:
     return event
 
 
+# (表示名, src, 一覧取得, 新規分の詳細確認, 1回あたりの詳細ページ取得上限)
 SOURCES = [
-    ("artscape", "artscape", fetch_artscape_list, resolve_artscape),
-    ("原画展.info", "gengaten", fetch_gengaten_list, resolve_gengaten),
+    ("artscape", "artscape", fetch_artscape_list, resolve_artscape, 40),
+    ("インターネットミュージアム", "museum_or_jp", fetch_museum_list, resolve_museum, 40),
+    ("原画展.info", "gengaten", fetch_gengaten_list, resolve_gengaten, 40),
+    ("コラボカフェ.com", "collabo_cafe", fetch_collabo_list, resolve_collabo, 70),
 ]
 
 
@@ -384,13 +628,14 @@ def main() -> None:
 
     diagnostics: dict[str, dict] = {}
     all_ok = True
-    for label, src, fetch_fn, resolve_fn in SOURCES:
-        stats = {"added": 0, "updated": 0, "skipped_budget": 0, "detail_errors": 0}
+    for label, src, fetch_fn, resolve_fn, budget in SOURCES:
+        stats = {"added": 0, "updated": 0, "skipped_budget": 0, "detail_errors": 0,
+                 "added_titles": [], "needs_review": []}
         try:
             scraped = fetch_fn()
             if not scraped:
                 raise RuntimeError("0件(サイト構造の変更またはブロックの可能性)")
-            merge_source(events, scraped, src, today, resolve_fn, stats)
+            merge_source(events, scraped, src, today, resolve_fn, stats, budget)
             diagnostics[label] = {"ok": True, "scraped": len(scraped), "error": None, **stats}
             print(f"[ok] {label}: 取得{len(scraped)}件 / 追加{stats['added']} 更新{stats['updated']}")
         except Exception as exc:  # noqa: BLE001 - 1ソースの失敗で全体を止めない
@@ -403,7 +648,8 @@ def main() -> None:
     data["events"] = events
     data["last_updated"] = today
     data["last_updated_note"] = (
-        "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）"
+        "GitHub Actionsでartscape・インターネットミュージアム・原画展.info・コラボカフェ.comを自動取得"
+        "（それ以外の情報源はClaudeの定期確認分を維持）"
         + ("" if all_ok else "（一部ソースは取得失敗のため既存データを維持）")
     )
 
