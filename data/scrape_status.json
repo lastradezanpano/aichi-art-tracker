@@ -16,26 +16,11 @@
       "ok": true,
       "scraped": 28,
       "error": null,
-      "added": 14,
+      "added": 0,
       "updated": 0,
       "skipped_budget": 0,
       "detail_errors": 0,
-      "added_titles": [
-        "フォンタネージ －イタリアの光・心の風景",
-        "尾﨑士郎と宇野千代",
-        "海を渡ったクリスマス",
-        "特別展「華麗なる刀身彫刻」",
-        "雨夜に星を見いだす 木村定三の陶磁コレクション",
-        "没後50年 熊谷守一展",
-        "シルクロードの手仕事──中央アジアの華麗なる刺繍とジュエリー",
-        "富田うしほ・潮児と西尾近代俳句",
-        "物産学への招待",
-        "希少植物カンアオイを描く ボタニカルアート展",
-        "球状コンクリーションに学ぶ",
-        "名大の彩りよりどりみどり",
-        "もっと深堀り！寄生虫は十人十色！？",
-        "あっちにもこっちにも！寄生虫のせかい"
-      ],
+      "added_titles": [],
       "needs_review": []
     },
     "原画展.info": {
@@ -53,22 +38,11 @@
       "ok": true,
       "scraped": 48,
       "error": null,
-      "added": 10,
+      "added": 0,
       "updated": 0,
       "skipped_budget": 0,
       "detail_errors": 0,
-      "added_titles": [
-        "TVアニメ『WIND BREAKER』 POP UP SHOP",
-        "ちいかわクリニック",
-        "TVアニメ『SPY×FAMILY』POP UP SHOP -MASQUERADE- by WIT STUDIO",
-        "学園アイドルマスター ポップアップストア 2026 ～Gearbeat Concerto～",
-        "DAIMARU×まめゴマ ポップアップストア",
-        "戦姫絶唱シンフォギアXV 15th Anniversary POP UP STORE in LOFT 愛知会場 栄ロフト",
-        "ぼっち・ざ・ろっく! ポップアップショップ～Winter 2026/2027～",
-        "チアリステイルズ POP-UP STORE",
-        "『僕のヒーローアカデミア』10周年 × bones store POP UP",
-        "ちろぴのクエスト!!～キミと巡る冒険の旅～"
-      ],
+      "added_titles": [],
       "needs_review": [
         {
           "title": "おねがいアイプリ × 洒落CAFE 12月7日より3都市で順次開催!",
