@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-24",
-  "last_updated_note": "GitHub Actionsでartscape・原画展.infoを自動取得（それ以外の情報源は確認済みの既存データを維持）",
+  "last_updated": "2026-11-25",
+  "last_updated_note": "GitHub Actionsでartscape・インターネットミュージアム・原画展.info・コラボカフェ.comを自動取得（それ以外の情報源はClaudeの定期確認分を維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
     {
@@ -13,6 +13,39 @@
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/68573/",
       "dateEnd": "2027-01-17"
+    },
+    {
+      "date": "2026-07-18",
+      "title": "あっちにもこっちにも！寄生虫のせかい",
+      "venue": "蒲郡市生命の海科学館",
+      "city": "",
+      "category": "科学・自然",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/125815",
+      "dateEnd": "2026-11-29"
+    },
+    {
+      "date": "2026-07-18",
+      "title": "もっと深堀り！寄生虫は十人十色！？",
+      "venue": "蒲郡市生命の海科学館",
+      "city": "",
+      "category": "科学・自然",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/125816",
+      "dateEnd": "2026-11-29"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "物産学への招待",
+      "venue": "西尾市岩瀬文庫",
+      "city": "西尾市",
+      "category": "展覧会",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127632",
+      "dateEnd": "2026-11-29"
     },
     {
       "date": "2026-09-11",
@@ -59,6 +92,17 @@
       "url": "https://aichinow.pref.aichi.jp/events/detail/4152/"
     },
     {
+      "date": "2026-09-29",
+      "title": "尾﨑士郎と宇野千代",
+      "venue": "尾﨑士郎記念館",
+      "city": "西尾市",
+      "category": "展覧会",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127634",
+      "dateEnd": "2027-12-05"
+    },
+    {
       "date": "2026-10-01",
       "title": "ComoNeプログラム#03 in TOUCH ーふれられる距離で",
       "venue": "東海国立大学機構 Common Nexus",
@@ -68,6 +112,28 @@
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/74792/",
       "dateEnd": "2027-03-19"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "名大の彩りよりどりみどり",
+      "venue": "名古屋大学博物館",
+      "city": "名古屋市",
+      "category": "歴史・博物",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/126922",
+      "dateEnd": "2026-12-25"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "特別展「華麗なる刀身彫刻」",
+      "venue": "名古屋刀剣博物館",
+      "city": "名古屋市",
+      "category": "歴史・博物",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/126560",
+      "dateEnd": "2027-01-17"
     },
     {
       "date": "2026-10-06",
@@ -123,6 +189,17 @@
       "note": "古代中国の副葬品「明器」に表された建築の姿を読み解くユニークな視点の企画展。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/75130/"
+    },
+    {
+      "date": "2026-10-10",
+      "title": "富田うしほ・潮児と西尾近代俳句",
+      "venue": "西尾市資料館",
+      "city": "西尾市",
+      "category": "歴史・博物",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127633",
+      "dateEnd": "2027-01-11"
     },
     {
       "date": "2026-10-10",
@@ -224,6 +301,17 @@
       "url": "https://collabo-cafe.com/events/collabo/haikyu-cafe-and-gallery-winter-2026/"
     },
     {
+      "date": "2026-11-03",
+      "title": "海を渡ったクリスマス",
+      "venue": "名古屋陶磁器会館",
+      "city": "愛知県名古屋市",
+      "category": "工芸・陶芸",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127012",
+      "dateEnd": "2026-12-25"
+    },
+    {
       "date": "2026-11-04",
       "dateEnd": "2026-12-21",
       "title": "塩川いづみ展「12」",
@@ -235,15 +323,15 @@
       "url": "https://artscape.jp/exhibitions/80286/"
     },
     {
-      "date": "2026-11-05",
-      "dateEnd": "2026-11-24",
-      "title": "桃源暗鬼 × スイパラ第2弾 お月見カフェ",
-      "venue": "COLLABO PARADISE 名古屋パルコ店",
+      "date": "2026-11-10",
+      "title": "希少植物カンアオイを描く ボタニカルアート展",
+      "venue": "名古屋大学博物館",
       "city": "名古屋市",
-      "category": "コラボカフェ",
+      "category": "歴史・博物",
       "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/tougen-anki-cafe-sweets-paradise-vol2-2026/"
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127599",
+      "dateEnd": "2026-12-25"
     },
     {
       "date": "2026-11-14",
@@ -258,6 +346,17 @@
     },
     {
       "date": "2026-11-14",
+      "title": "戦姫絶唱シンフォギアXV 15th Anniversary POP UP STORE in LOFT 愛知会場 栄ロフト",
+      "venue": "栄ロフト 6階 バラエティ雑貨売場",
+      "city": "",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/symphogear-xv-15th-popup-store-loft-2026-2027/",
+      "dateEnd": "2026-11-29"
+    },
+    {
+      "date": "2026-11-14",
       "dateEnd": "2026-12-01",
       "title": "稲吉オサム 陶50",
       "venue": "ギャラリーサンセリテ",
@@ -266,6 +365,17 @@
       "note": "",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/80850/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "薬屋のひとりごと「ハロウィンフェア 2026」グラッテ",
+      "venue": "アニメイトグラッテ アニメイト通り店・池袋本店・秋葉原ANNEX・渋谷・吉祥寺パルコ・横浜ビブレ・仙台・名古屋・大阪日本橋・梅田・岡山・ラシック福岡",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/kusuriya-halloween-fair-gratte-2026/",
+      "dateEnd": "2026-12-10"
     },
     {
       "date": "2026-11-19",
@@ -323,8 +433,30 @@
       "url": "https://collabo-cafe.com/events/collabo/makeine-pop-up-store-gamers-tokyo-aichi-osaka-2026/"
     },
     {
+      "date": "2026-11-24",
+      "title": "球状コンクリーションに学ぶ",
+      "venue": "名古屋大学博物館",
+      "city": "名古屋市",
+      "category": "歴史・博物",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127577",
+      "dateEnd": "2027-05-15"
+    },
+    {
       "date": "2026-11-26",
-      "dateEnd": "2026-12-14",
+      "title": "SQUARE ENIX POP UP CAFE グランドメニュー",
+      "venue": "〒460-0003 愛知県名古屋市中区錦3丁目19-21 安心お宿 Nagoya Man&Woman 名古屋栄店1F",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/sqex-popup-cafe-grandmenu-yokohama-osaka-nagoya-2026-2027/",
+      "dateEnd": "2027-03-28"
+    },
+    {
+      "date": "2026-11-26",
+      "dateEnd": "2027-02-15",
       "title": "ししわたクッキング Collaboration Cafe in SMILE BASE CAFE（ホロライブ）",
       "venue": "SMILE BASE CAFE 名古屋栄店",
       "city": "名古屋市",
@@ -332,6 +464,17 @@
       "note": "",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/hololive-cafe-smile-base-cafe-shishiwata-cooking-2026/"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "ちいかわクリニック",
+      "venue": "名古屋PARCO 東館 PARCO BOX",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-clinic-popup-kiddyland-2026/",
+      "dateEnd": "2026-12-20"
     },
     {
       "date": "2026-11-27",
@@ -357,6 +500,17 @@
     },
     {
       "date": "2026-11-28",
+      "dateEnd": "2027-01-31",
+      "title": "ドコムスチャンネルPOP UP STORE : おでかけコレクション2026",
+      "venue": "名古屋セントラルパーク 地下街イベントスペースbyマルイ",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/dkomusu-odekake-collection-popup-marui-2026/"
+    },
+    {
+      "date": "2026-11-28",
       "title": "館蔵品展「○○をさがせ！ －見えないものの だいそうさく！－」",
       "venue": "高浜市やきものの里かわら美術館・図書館",
       "city": "高浜市",
@@ -365,6 +519,28 @@
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/84026/",
       "dateEnd": "2027-02-14"
+    },
+    {
+      "date": "2026-12-01",
+      "title": "WIND BREAKER × スイーツパラダイス 第2弾",
+      "venue": "新宿東口店 / 梅田店 / 名古屋スパイラルタワーズ店 / 丸井大宮店 / 仙台パルコ店 / 広島パルコ店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/wind-breaker-cafe-sweets-paradise-vol2-2026/",
+      "dateEnd": "2026-12-27"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "TVアニメ『WIND BREAKER』 POP UP SHOP",
+      "venue": "TSUTAYA BOOKSTORE 則武新町",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/wind-breaker-marching-popup-shop-2026/",
+      "dateEnd": "2026-12-17"
     },
     {
       "date": "2026-12-04",
@@ -379,6 +555,28 @@
     },
     {
       "date": "2026-12-05",
+      "title": "ちろぴのクエスト!!～キミと巡る冒険の旅～",
+      "venue": "名古屋グローバルゲート",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/tiropino-quest-popup-marui-2026/",
+      "dateEnd": "2026-12-14"
+    },
+    {
+      "date": "2026-12-05",
+      "title": "僕のヒーローアカデミア』10周年 × bones store POP UP",
+      "venue": "名古屋PARCO",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/heroaca-10th-bones-store-popup-ikebukuro-nagoya-2026/",
+      "dateEnd": "2026-12-20"
+    },
+    {
+      "date": "2026-12-05",
       "dateEnd": "2027-01-24",
       "title": "特別展「葬送のかたち－弥生墳墓と古墳－」",
       "venue": "安城市歴史博物館",
@@ -387,6 +585,28 @@
       "note": "安城市内の鹿乗川流域遺跡群・桜井古墳群の新発掘成果を紹介。9:00〜17:00、月曜休館。",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/81284/"
+    },
+    {
+      "date": "2026-12-07",
+      "title": "Anique Shop web販売",
+      "venue": "Anique Shop",
+      "city": "",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/onegai-aipri-buzzlium-cafe-sharecafe-2026/",
+      "dateEnd": "2027-01-12"
+    },
+    {
+      "date": "2026-12-09",
+      "title": "EIKO!GO!! × and GALLERY「EIKO!Cafe",
+      "venue": "and GALLERY 池袋店 / 名古屋1号店 / なんば1号店 / 仙台店 / 福岡店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/kano-eiko-eikogo-cafe-and-gallery-vol2-2026-2027/",
+      "dateEnd": "2027-01-19"
     },
     {
       "date": "2026-12-09",
@@ -409,6 +629,17 @@
       "note": "館内のコーヒーショップでコラボメニューあり",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/osamu-goods-50th-exhibition-nagoya-2026-2027/"
+    },
+    {
+      "date": "2026-12-11",
+      "title": "チアリステイルズ POP-UP STORE",
+      "venue": "名古屋PARCO",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/cheeristails-1st-popup-shinsaibashi-parco-2026/",
+      "dateEnd": "2026-12-27"
     },
     {
       "date": "2026-12-12",
@@ -444,6 +675,61 @@
       "url": "https://collabo-cafe.com/events/collabo/conanten-anime-30th-anniversary-exhibition-nagoya2026/"
     },
     {
+      "date": "2026-12-18",
+      "title": "ヘタリア × グラッテ 周年カフェのリバイバル 12月18日より開催!",
+      "venue": "アニメイトグラッテ池袋本店・秋葉原ANNEX・横浜ビブレ・名古屋・大阪日本橋・岡山",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/hetalia-world-stars-cafe-gratte-revival-2026/",
+      "dateEnd": "2027-01-17"
+    },
+    {
+      "date": "2026-12-19",
+      "title": "ぼっち・ざ・ろっく! ポップアップショップ～Winter 2026/2027～",
+      "venue": "ジーストア名古屋",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/bocchi-rocks-winter-odekake-popup-shop-tour-2026/",
+      "dateEnd": "2027-01-03"
+    },
+    {
+      "date": "2026-12-21",
+      "title": "バンドリ! アワーノーツ × グラッテ 12月21日より開催!",
+      "venue": "アニメイトグラッテ池袋本店・秋葉原ANNEX・横浜ビブレ・名古屋・大阪日本橋・岡山",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/bang-dream-our-notes-cafe-gratte-2026/",
+      "dateEnd": "2027-01-31"
+    },
+    {
+      "date": "2026-12-24",
+      "title": "学園アイドルマスター」ポップアップストア 2026 ～Gearbeat Concerto～",
+      "venue": "名古屋駅前店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/gakuen-idolmaster-gearbeat-concerto-popup-2026/",
+      "dateEnd": "2027-01-11"
+    },
+    {
+      "date": "2027-01-08",
+      "title": "ヨルムンガンド × HUB」コラボ",
+      "venue": "名駅四丁目店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/jormungand-20th-anniv-hub-collabo-2027/",
+      "dateEnd": "2027-01-24"
+    },
+    {
       "date": "2027-01-16",
       "dateEnd": "2027-02-14",
       "title": "創刊50周年記念LaLa原画展〜魅惑のクリエイション〜",
@@ -455,15 +741,70 @@
       "url": "https://collabo-cafe.com/events/collabo/lala-50th-anniversary-exhibition-matsuzakaya-nagoya-2027/"
     },
     {
-      "date": "2027-01-22",
-      "dateEnd": "2027-01-31",
-      "title": "ドコムスチャンネルPOP UP STORE : おでかけコレクション2026",
-      "venue": "名古屋セントラルパーク 地下街イベントスペースbyマルイ",
+      "date": "2027-01-27",
+      "title": "DAIMARU×まめゴマ」ポップアップストア",
+      "venue": "松坂屋名古屋店",
       "city": "名古屋市",
       "category": "ポップアップ・グッズ",
       "note": "",
       "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/dkomusu-odekake-collection-popup-marui-2026/"
+      "url": "https://collabo-cafe.com/events/collabo/mamegoma-daimaru-popup-store-2026/",
+      "dateEnd": "2027-02-02"
+    },
+    {
+      "date": "2027-02-06",
+      "title": "フォンタネージ －イタリアの光・心の風景",
+      "venue": "名古屋市美術館",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127514",
+      "dateEnd": "2027-04-04"
+    },
+    {
+      "date": "2027-03-12",
+      "title": "TVアニメ『SPY×FAMILY』POP UP SHOP -MASQUERADE- by WIT STUDIO",
+      "venue": "TSUTAYA BOOKSTORE 則武新町",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/spyfamily-masquerade-popup-ip-shoten-2026/",
+      "dateEnd": "2027-03-31"
+    },
+    {
+      "date": "2027-04-29",
+      "title": "シルクロードの手仕事──中央アジアの華麗なる刺繍とジュエリー",
+      "venue": "愛知県美術館",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127854",
+      "dateEnd": "2027-06-27"
+    },
+    {
+      "date": "2027-07-16",
+      "title": "没後50年 熊谷守一展",
+      "venue": "愛知県美術館",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127855",
+      "dateEnd": "2027-09-12"
+    },
+    {
+      "date": "2027-10-01",
+      "title": "雨夜に星を見いだす 木村定三の陶磁コレクション",
+      "venue": "愛知県美術館",
+      "city": "名古屋市",
+      "category": "工芸・陶芸",
+      "note": "",
+      "src": "museum_or_jp",
+      "url": "https://www.museum.or.jp/event/127856",
+      "dateEnd": "2027-12-05"
     }
   ],
   "collections": [
