@@ -1,0 +1,23 @@
+name: Debug fetch
+on:
+  push:
+    branches: [debug-fetch]
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          UA="Mozilla/5.0 (compatible; AichiArtTracker/1.0; +https://github.com/lastradezanpano/aichi-art-tracker)"
+          curl -sL -A "$UA" -o debug/museum_list.html "https://www.museum.or.jp/event?area=pref-23" || true
+          curl -sL -A "$UA" -o debug/museum_list_p2.html "https://www.museum.or.jp/event?area=pref-23&page=2" || true
+          curl -sL -A "$UA" -o debug/museum_detail.html "https://www.museum.or.jp/event/127634" || true
+          curl -sL -A "$UA" -o debug/collabo_list.html "https://collabo-cafe.com/events/tag/nagoya/" || true
+          curl -sL -A "$UA" -o debug/collabo_detail.html "https://collabo-cafe.com/events/collabo/girls-band-cry-sukajan-popup-kotobukiya-melonbooks-2026/" || true
+          curl -sL -A "$UA" -o debug/artagenda.html "https://www.artagenda.jp/exhibition/index?region=23" || true
+          ls -la debug
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add debug && git commit -m "debug: fetched pages" && git push
