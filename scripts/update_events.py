@@ -367,8 +367,6 @@ COLLABO_CAPTION_RE = re.compile(r"<caption>(.*?)</caption>", re.DOTALL)
 AICHI_WORD_RE = re.compile(r"愛知|名古屋")
 BRACKET_RE = re.compile(r"^【([^】]*)】\s*")
 VAGUE_VENUE_RE = re.compile(r"全国|各店|各会場|店舗|ほか|他|後日|未定|予定")
-CITY_IN_TEXT_RE = re.compile(r"(名古屋|豊橋|岡崎|一宮|瀬戸|春日井|豊川|刈谷|豊田|安城|西尾|"
-                             r"小牧|稲沢|東海|大府|知多|長久手|日進|常滑|半田|犬山|江南|蒲郡)")
 
 
 def parse_collabo_list(html: str) -> list[dict]:
@@ -425,19 +423,41 @@ class NeedsReview(Exception):
     """自動では会場・会期を1つに確定できない(Claudeまたは人の確認が必要)"""
 
 
-def resolve_collabo(item: dict) -> dict | None:
-    page = http_get(item["url"])
-    # 記事には特典期間などの表も並ぶため、「期間」と「会場」の両方の欄がある表(開催概要)を使う
-    table_m = period_cell = venue_cell = None
-    for candidate in COLLABO_TABLE_RE.finditer(page):
-        rows = {clean_text(k): v for k, v in COLLABO_ROW_RE.findall(candidate.group(1))}
-        period_cell = next((v for k, v in rows.items() if "期間" in k or "日程" in k), "")
-        venue_cell = next((v for k, v in rows.items() if "会場" in k or "店舗" in k or "場所" in k), "")
-        if period_cell and venue_cell:
-            table_m = candidate
-            break
-    if not table_m:
-        raise NeedsReview("開催概要の表(期間・会場)が見つからない")
+ONLINE_RE = re.compile(r"web|WEB|Web|オンライン|通販|EC|ネット")
+POSTAL_RE = re.compile(r"〒|\d{3}-\d{4}|丁目|番地")
+# 「名古屋」「愛知」と書かれていなくても名古屋市内と分かる地名
+NAGOYA_PLACE_RE = re.compile(r"栄|名駅|大須|金山|久屋|伏見|則武|MIRAI TOWER|ミライタワー|"
+                             r"中区|中村区|東区|千種区|熱田区|名東区")
+CITY_IN_TEXT_RE = re.compile(r"(豊橋|岡崎|一宮|瀬戸|春日井|豊川|刈谷|豊田|安城|西尾|小牧|稲沢|東海|"
+                             r"大府|知多|長久手|日進|常滑|半田|犬山|江南|蒲郡)")
+
+
+def guess_city(text: str) -> str:
+    if "名古屋" in text or NAGOYA_PLACE_RE.search(text):
+        return "名古屋市"
+    match = CITY_IN_TEXT_RE.search(text)
+    return match.group(1) + "市" if match else ""
+
+
+def tidy_collabo_title(text: str) -> str:
+    text = clean_text(text)
+    text = re.sub(r"\s*(の)?(開催概要|概要|詳細|開催情報)$", "", text)
+    text = re.sub(r"\s*\d{1,2}月\d{1,2}日(より|から).*$", "", text)  # 一覧タイトル末尾の「12月21日より開催!」
+    match = re.match(r"^「([^」]+)」\s*(.*)$", text)               # 「作品 × 店」コラボ → 作品 × 店 コラボ
+    if match:
+        text = f"{match.group(1)} {match.group(2)}".strip()
+    for left, right in ("「」", "『』"):                             # 片方だけ残ったカッコを外す
+        if text.count(left) != text.count(right):
+            text = text.replace(left, " ").replace(right, " ")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def resolve_collabo_table(table: str, item: dict) -> dict | None:
+    rows = {clean_text(k): v for k, v in COLLABO_ROW_RE.findall(table)}
+    period_cell = next((v for k, v in rows.items() if "期間" in k or "日程" in k), "")
+    venue_cell = next((v for k, v in rows.items() if "会場" in k or "店舗" in k or "場所" in k), "")
+    if not period_cell or not venue_cell:
+        return None
 
     venue_lines = split_lines(venue_cell)
     aichi_lines = [l for l in venue_lines if AICHI_WORD_RE.search(l)]
@@ -445,7 +465,12 @@ def resolve_collabo(item: dict) -> dict | None:
     if len(aichi_lines) == 1:
         venue_line = aichi_lines[0]
     elif not aichi_lines and len(venue_lines) == 1 and not has_brackets:
-        venue_line = venue_lines[0]  # 名古屋タグの記事で会場が1か所だけ
+        # 会場が1か所だけで愛知と書いていない表。タイトルか会場名から名古屋と分かるときだけ採用
+        venue_line = venue_lines[0]
+        if ONLINE_RE.search(venue_line):
+            return None
+        if not (AICHI_WORD_RE.search(item["title"]) or NAGOYA_PLACE_RE.search(venue_line)):
+            raise NeedsReview(f"会場が愛知か判断できない: {venue_line}")
     elif not aichi_lines:
         return None  # 愛知の会場がない(名古屋タグでも他県のみの記事がある)
     else:
@@ -453,8 +478,13 @@ def resolve_collabo(item: dict) -> dict | None:
     bracket_m = BRACKET_RE.match(venue_line)
     region = bracket_m.group(1) if bracket_m else ""
     venue = BRACKET_RE.sub("", venue_line).strip()
-    if not venue or VAGUE_VENUE_RE.search(venue):
+    if not venue or VAGUE_VENUE_RE.search(venue) or ONLINE_RE.search(venue):
         raise NeedsReview(f"会場が確定していない: {venue_line}")
+    # 「池袋店・名古屋店・梅田店」のように1行に複数店舗が並ぶ書き方は、期間も全店まとめての可能性が高い
+    if re.search(r"[/／、]", venue) or venue.count("・") >= 2:
+        raise NeedsReview(f"1行に複数の会場: {venue[:40]}")
+    if POSTAL_RE.search(venue):
+        raise NeedsReview(f"会場欄が住所表記: {venue[:40]}")
 
     period_lines = split_lines(period_cell)
     ranged = [l for l in period_lines if FULL_DATE_RE.search(l) or MONTH_DAY_RE.search(l)]
@@ -464,27 +494,24 @@ def resolve_collabo(item: dict) -> dict | None:
         ranged = [l for l in ranged if any(k in l for k in keys)]
     if len(ranged) != 1:
         raise NeedsReview("愛知会場の期間を1つに確定できない")
-    period_text = ranged[0]
+    period_text = BRACKET_RE.sub("", ranged[0])
     if not FULL_DATE_RE.search(period_text):
         year_m = FULL_DATE_RE.search(clean_text(period_cell))
         if not year_m:
             raise NeedsReview("期間に年の記載がない")
-        period_text = f"{year_m.group(1)}年{BRACKET_RE.sub('', period_text)}"
-    period = parse_ja_period(BRACKET_RE.sub("", period_text))
+        period_text = f"{year_m.group(1)}年{period_text}"
+    period = parse_ja_period(period_text)
     if not period:
-        raise NeedsReview(f"期間を読み取れない: {period_text}")
+        raise NeedsReview(f"期間を読み取れない: {period_text[:40]}")
 
-    caption_m = COLLABO_CAPTION_RE.search(table_m.group(1))
-    title = item["title"]
-    if caption_m:
-        caption = re.sub(r"\s*(開催概要|概要|詳細)$", "", clean_text(caption_m.group(1)))
-        title = caption.strip("「」『』 ") or title
-    city_m = CITY_IN_TEXT_RE.search(region + venue)
+    caption_m = COLLABO_CAPTION_RE.search(table)
+    title = tidy_collabo_title(caption_m.group(1)) if caption_m else ""
+    title = title or tidy_collabo_title(item["title"])
     event = {
         "date": period[0],
         "title": title,
         "venue": venue,
-        "city": city_m.group(1) + "市" if city_m else "",
+        "city": guess_city(region + " " + venue),
         "category": collabo_category(item["list_category"], title),
         "note": "",
         "src": "collabo_cafe",
@@ -493,6 +520,28 @@ def resolve_collabo(item: dict) -> dict | None:
     if period[1]:
         event["dateEnd"] = period[1]
     return event
+
+
+def resolve_collabo(item: dict) -> dict | None:
+    page = http_get(item["url"])
+    # 記事には特典期間・通販などの表も並ぶ。期間と会場の欄がある表を順に見て、愛知の会場が確定できた表を使う
+    review: NeedsReview | None = None
+    found_table = False
+    for table in COLLABO_TABLE_RE.findall(page):
+        try:
+            event = resolve_collabo_table(table, item)
+        except NeedsReview as exc:
+            review = review or exc
+            found_table = True
+            continue
+        if event:
+            return event
+        found_table = found_table or bool(COLLABO_ROW_RE.search(table))
+    if review:
+        raise review
+    if not found_table:
+        raise NeedsReview("開催概要の表(期間・会場)が見つからない")
+    return None
 
 
 # ---------------------------------------------------------------- 統合処理
@@ -529,7 +578,7 @@ def merge_source(events: list[dict], scraped: list[dict], src: str, today: str,
             continue
         match = find_match(item, events)
         if match:
-            if match.get("src") == src and (
+            if src in LIST_DATES_RELIABLE and match.get("src") == src and (
                 match.get("date") != item["date"] or match.get("dateEnd", "") != item["dateEnd"]
             ):
                 match["date"] = item["date"]
@@ -601,6 +650,9 @@ def resolve_gengaten(item: dict) -> dict | None:
         event["dateEnd"] = item["dateEnd"]
     return event
 
+
+# 一覧に載っている会期が「その会場の会期」と言える情報源。コラボカフェ.comの一覧は全会場まとめた期間なので含めない
+LIST_DATES_RELIABLE = {"artscape", "museum_or_jp", "gengaten"}
 
 # (表示名, src, 一覧取得, 新規分の詳細確認, 1回あたりの詳細ページ取得上限)
 SOURCES = [
