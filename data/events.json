@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25",
+  "last_updated": "2026-11-26",
   "last_updated_note": "GitHub Actionsでartscape・インターネットミュージアム・原画展.info・コラボカフェ.comを自動取得（それ以外の情報源はClaudeの定期確認分を維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -323,6 +323,17 @@
       "url": "https://artscape.jp/exhibitions/80286/"
     },
     {
+      "title": "『NO.6』×カラオケの鉄人 SPECIAL COLLABORATION",
+      "date": "2026-11-05",
+      "dateEnd": "2026-12-20",
+      "venue": "カラオケの鉄人 コラボミックス 名古屋名駅店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "15周年コラボ。名駅店のコンセプトルームは11/25〜12/16。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/no6-shop-tieup-karatetsu-15th-2026/"
+    },
+    {
       "date": "2026-11-10",
       "title": "希少植物カンアオイを描く ボタニカルアート展",
       "venue": "名古屋大学博物館",
@@ -332,6 +343,17 @@
       "src": "museum_or_jp",
       "url": "https://www.museum.or.jp/event/127599",
       "dateEnd": "2026-12-25"
+    },
+    {
+      "title": "ゴールデンカムイ × サンリオキャラクターズ POP UP SHOP",
+      "date": "2026-11-13",
+      "dateEnd": "2026-11-26",
+      "venue": "キデイランド名古屋パルコ店",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/goldenkamuy-sanrio-3rd-popup-kiddyland-2026/"
     },
     {
       "date": "2026-11-14",
@@ -365,6 +387,17 @@
       "note": "",
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/80850/"
+    },
+    {
+      "title": "薬屋のひとりごと × グラッテ ハロウィン",
+      "date": "2026-11-14",
+      "dateEnd": "2026-12-10",
+      "venue": "アニメイトグラッテ 名古屋",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/kusuriya-halloween-fair-gratte-2026/"
     },
     {
       "date": "2026-11-19",
@@ -455,6 +488,28 @@
       "url": "https://collabo-cafe.com/events/collabo/hololive-cafe-smile-base-cafe-shishiwata-cooking-2026/"
     },
     {
+      "title": "SQUARE ENIX POP UP CAFE グランドメニュー",
+      "date": "2026-11-26",
+      "dateEnd": "2027-03-28",
+      "venue": "SQUARE ENIX POP UP CAFE NAGOYA（栄）",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/sqex-popup-cafe-grandmenu-yokohama-osaka-nagoya-2026-2027/"
+    },
+    {
+      "title": "『名探偵プリキュア!』COLLABORATION CAFE in スイパラ",
+      "date": "2026-11-26",
+      "dateEnd": "2026-12-27",
+      "venue": "COLLABO PARADISE 名古屋パルコ店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/meitantei-precure-cafe-sweets-paradise-2026/"
+    },
+    {
       "date": "2026-11-27",
       "title": "ちいかわクリニック",
       "venue": "名古屋PARCO 東館 PARCO BOX",
@@ -497,6 +552,17 @@
       "src": "artscape",
       "url": "https://artscape.jp/exhibitions/84026/",
       "dateEnd": "2027-02-14"
+    },
+    {
+      "title": "WIND BREAKER × スイーツパラダイス 第2弾",
+      "date": "2026-12-01",
+      "dateEnd": "2026-12-27",
+      "venue": "スイーツパラダイス 名古屋スパイラルタワーズ店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/wind-breaker-cafe-sweets-paradise-vol2-2026/"
     },
     {
       "date": "2026-12-04",
@@ -565,6 +631,17 @@
       "url": "https://collabo-cafe.com/events/collabo/kiminosukihamuteki-dec-popup-shop-jr-nagoya-takashimaya-2026/"
     },
     {
+      "title": "EIKO!GO!! × and GALLERY「EIKO!Cafe」第2弾",
+      "date": "2026-12-09",
+      "dateEnd": "2027-01-06",
+      "venue": "and GALLERY 名古屋1号店（大須・万松寺ビル1F）",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "12/31〜1/3は店休日。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/kano-eiko-eikogo-cafe-and-gallery-vol2-2026-2027/"
+    },
+    {
       "date": "2026-12-10",
       "dateEnd": "2027-01-22",
       "title": "The 50th Anniversary OSAMU GOODS展",
@@ -585,6 +662,17 @@
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/cheeristails-1st-popup-shinsaibashi-parco-2026/",
       "dateEnd": "2026-12-27"
+    },
+    {
+      "title": "ちいかわベーカリー NAGOYA POP UP SHOP",
+      "date": "2026-12-11",
+      "dateEnd": "2027-01-11",
+      "venue": "名古屋PARCO 西館8F イベントスペース",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-bakery-nagoya-popup-parco-2026/"
     },
     {
       "date": "2026-12-12",
@@ -620,6 +708,17 @@
       "url": "https://collabo-cafe.com/events/collabo/conanten-anime-30th-anniversary-exhibition-nagoya2026/"
     },
     {
+      "title": "ヘタリア World★Stars HAPPY ANNIVERSARY CAFÉ リバイバル×Gratte",
+      "date": "2026-12-18",
+      "dateEnd": "2027-01-17",
+      "venue": "アニメイトグラッテ 名古屋",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/hetalia-world-stars-cafe-gratte-revival-2026/"
+    },
+    {
       "date": "2026-12-19",
       "title": "ぼっち・ざ・ろっく! ポップアップショップ～Winter 2026/2027～",
       "venue": "ジーストア名古屋",
@@ -629,6 +728,17 @@
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/bocchi-rocks-winter-odekake-popup-shop-tour-2026/",
       "dateEnd": "2027-01-03"
+    },
+    {
+      "title": "バンドリ! アワーノーツ × グラッテ",
+      "date": "2026-12-21",
+      "dateEnd": "2027-01-31",
+      "venue": "アニメイトグラッテ 名古屋",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/bang-dream-our-notes-cafe-gratte-2026/"
     },
     {
       "date": "2026-12-23",
@@ -653,6 +763,39 @@
       "dateEnd": "2027-01-11"
     },
     {
+      "title": "にじさんじカフェ in SWEETS PARADISE 第17弾",
+      "date": "2026-12-29",
+      "dateEnd": "2027-01-24",
+      "venue": "スイーツパラダイス 名古屋スパイラルタワーズ店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/nijisanji-cafe-sweets-paradise-vol17-2026-2027/"
+    },
+    {
+      "title": "テレビアニメ『おねがいアイプリ』おねがい★バズリウムカフェ at 洒落CAFE",
+      "date": "2027-01-04",
+      "dateEnd": "2027-01-11",
+      "venue": "洒落CAFE 名古屋セントラルパーク店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/onegai-aipri-buzzlium-cafe-sharecafe-2026/"
+    },
+    {
+      "title": "ヨルムンガンド × HUB コラボ",
+      "date": "2027-01-08",
+      "dateEnd": "2027-01-24",
+      "venue": "HUB 名駅四丁目店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "原作20周年記念。開催店舗は変更の場合あり。",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/jormungand-20th-anniv-hub-collabo-2027/"
+    },
+    {
       "date": "2027-01-16",
       "dateEnd": "2027-02-14",
       "title": "創刊50周年記念LaLa原画展〜魅惑のクリエイション〜",
@@ -673,6 +816,17 @@
       "note": "",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/dkomusu-odekake-collection-popup-marui-2026/"
+    },
+    {
+      "title": "『とらドラ!』原作20周年記念フェア in アニメイト",
+      "date": "2027-01-23",
+      "dateEnd": "2027-02-14",
+      "venue": "アニメイト名古屋",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/toradora-kemomimi-maid-20th-fair-animate-2027/"
     },
     {
       "date": "2027-01-27",

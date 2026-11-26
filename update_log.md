@@ -100,3 +100,46 @@
 - 重複判定を改善（（仮）・没後○年・企画展などの付け足し、〇/○の違いを無視）。コラボカフェ.comは一覧の会期が全会場まとめた期間のため、一覧からの会期上書きを止めた。
 - データ修正: 井田照一展（仮）を削除、長谷川繁展・細川家と永青文庫の名宝・渡辺崋山展を正式名に。棟方志功展（豊田市民芸館）などを追加。
 - 試運転（GitHub Actions 2回）: インターネットミュージアム14件・コラボカフェ.com 10件を自動追加、要確認14件。掲載は34件→65件。
+
+
+## 2026-11-26 定期タスク（aichi-art-daily-update）実行 → 更新は見送り
+- スケジュールタスク「aichi-art-daily-update」が今朝08時台に起動した（タスク一覧では enabled=true のまま。10/16に「一時停止」と記録したが、停止が反映されていない）。
+- CLAUDE.md（2026-10-16〜 GitHub運用）に「index.htmlはdata/events.jsonを読む作りに変わったため、旧プロンプトのままでは動かさない」「旧Artifactは削除済み」とあるため、旧手順（index.htmlへのEVENTS埋め込み・削除済みArtifactへの再公開）は実行しなかった。
+- events.json・index.html・sources.jsonは変更なし。情報源へのアクセスもしていない。埋め込み指示の検出なし。
+- 気づいた点: ローカルのdata/events.jsonの last_updated は 2026-10-16 のまま（GitHub Actions側の更新はローカルに未反映、または停止の可能性。未確認）。
+- 要対応（ユーザー判断）: (1) このスケジュールタスクを無効化するか、GitHub運用用の手順（update_prompt.md）に書き換えるか。(2) GitHub側で毎日の自動更新が動いているかの確認。
+
+## 2026-11-26 スケジュールタスクの手順書き換え（ユーザー依頼）
+- aichi-art-daily-update を「確認待ちチェック」に変更。公開中のscrape_status.jsonのneeds_review（自動取得で愛知会場・会期を判断できなかった候補）を個別ページで確かめ、追加候補JSONをこのログに追記するだけにした。データ編集・git操作・Artifact公開はしない。
+- 確認時点の公開データ: checked_at=2026-11-25、4情報源とも ok。needs_review はコラボカフェ.comの14件。
+- ローカルリポジトリは 2026-10-16 以降 pull していないため古い（反映作業の前に git pull が必要）。
+
+## 2026-11-26 確認待ちチェック（新手順の試行・ユーザー同席の会話内で実施）
+- (a) GitHub自動更新: 公開データ last_updated / checked_at = 2026-11-25、65件。artscape・インターネットミュージアム・原画展.info・コラボカフェ.com とも ok。11/26朝の実行結果はまだ反映されていない（未確認）。
+- (b) 追加候補14件（needs_review 14件すべて、各個別ページで愛知会場・会期を確認。公開データとの重複なし）。※印2件は自動判定で「愛知の会場が複数(2か所)」とされたが、個別ページ確認では1会場のみ読み取れた。反映前に再確認推奨。
+```json
+[
+  {"title":"テレビアニメ『おねがいアイプリ』おねがい★バズリウムカフェ at 洒落CAFE","date":"2027-01-04","dateEnd":"2027-01-11","venue":"洒落CAFE 名古屋セントラルパーク店","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/onegai-aipri-buzzlium-cafe-sharecafe-2026/"},
+  {"title":"ちいかわベーカリー NAGOYA POP UP SHOP","date":"2026-12-11","dateEnd":"2027-01-11","venue":"名古屋PARCO 西館8F イベントスペース","city":"名古屋市","category":"ポップアップ・グッズ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/chiikawa-bakery-nagoya-popup-parco-2026/"},
+  {"title":"にじさんじカフェ in SWEETS PARADISE 第17弾","date":"2026-12-29","dateEnd":"2027-01-24","venue":"スイーツパラダイス 名古屋スパイラルタワーズ店","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/nijisanji-cafe-sweets-paradise-vol17-2026-2027/"},
+  {"title":"ヨルムンガンド × HUB コラボ","date":"2027-01-08","dateEnd":"2027-01-24","venue":"HUB 名駅四丁目店","city":"名古屋市","category":"コラボカフェ","note":"原作20周年記念。開催店舗は変更の場合あり。","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/jormungand-20th-anniv-hub-collabo-2027/"},
+  {"title":"SQUARE ENIX POP UP CAFE グランドメニュー","date":"2026-11-26","dateEnd":"2027-03-28","venue":"SQUARE ENIX POP UP CAFE NAGOYA（栄）","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/sqex-popup-cafe-grandmenu-yokohama-osaka-nagoya-2026-2027/"},
+  {"title":"『名探偵プリキュア!』COLLABORATION CAFE in スイパラ","date":"2026-11-26","dateEnd":"2026-12-27","venue":"COLLABO PARADISE 名古屋パルコ店","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/meitantei-precure-cafe-sweets-paradise-2026/"},
+  {"title":"バンドリ! アワーノーツ × グラッテ","date":"2026-12-21","dateEnd":"2027-01-31","venue":"アニメイトグラッテ 名古屋","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/bang-dream-our-notes-cafe-gratte-2026/"},
+  {"title":"『とらドラ!』原作20周年記念フェア in アニメイト","date":"2027-01-23","dateEnd":"2027-02-14","venue":"アニメイト名古屋","city":"名古屋市","category":"ポップアップ・グッズ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/toradora-kemomimi-maid-20th-fair-animate-2027/"},
+  {"title":"EIKO!GO!! × and GALLERY「EIKO!Cafe」第2弾","date":"2026-12-09","dateEnd":"2027-01-06","venue":"and GALLERY 名古屋1号店（大須・万松寺ビル1F）","city":"名古屋市","category":"コラボカフェ","note":"12/31〜1/3は店休日。","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/kano-eiko-eikogo-cafe-and-gallery-vol2-2026-2027/"},
+  {"title":"ヘタリア World★Stars HAPPY ANNIVERSARY CAFÉ リバイバル×Gratte","date":"2026-12-18","dateEnd":"2027-01-17","venue":"アニメイトグラッテ 名古屋","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/hetalia-world-stars-cafe-gratte-revival-2026/"},
+  {"title":"薬屋のひとりごと × グラッテ ハロウィン","date":"2026-11-14","dateEnd":"2026-12-10","venue":"アニメイトグラッテ 名古屋","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/kusuriya-halloween-fair-gratte-2026/"},
+  {"title":"WIND BREAKER × スイーツパラダイス 第2弾","date":"2026-12-01","dateEnd":"2026-12-27","venue":"スイーツパラダイス 名古屋スパイラルタワーズ店","city":"名古屋市","category":"コラボカフェ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/wind-breaker-cafe-sweets-paradise-vol2-2026/"},
+  {"title":"『NO.6』×カラオケの鉄人 SPECIAL COLLABORATION","date":"2026-11-05","dateEnd":"2026-12-20","venue":"カラオケの鉄人 コラボミックス 名古屋名駅店","city":"名古屋市","category":"コラボカフェ","note":"15周年コラボ。名駅店のコンセプトルームは11/25〜12/16。","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/no6-shop-tieup-karatetsu-15th-2026/"},
+  {"title":"ゴールデンカムイ × サンリオキャラクターズ POP UP SHOP","date":"2026-11-13","dateEnd":"2026-11-26","venue":"キデイランド名古屋パルコ店","city":"名古屋市","category":"ポップアップ・グッズ","note":"","src":"collabo_cafe","url":"https://collabo-cafe.com/events/collabo/goldenkamuy-sanrio-3rd-popup-kiddyland-2026/"}
+]
+```
+  - ※再確認推奨: ちいかわベーカリー、名探偵プリキュア（自動判定では愛知2会場）。金カム×サンリオは本日11/26で終了のため、反映が明日以降なら不要。
+- (c) 見送り0件。
+- (d) 埋め込み指示: 検出なし（スクエニのページ後半は要約でのみ確認）。
+- (e) まとめ: GitHub自動更新は11/25まで正常。確認待ち14件はすべて愛知会場・会期を確認でき、追加候補とした（うち2件は再確認推奨）。公開データへの反映は未実施（git pull → 追加 → 許可を得て push が必要）。
+
+## 2026-11-26 追加候補の反映（ユーザー依頼）
+- GitHubの最新（6c559ce、47コミット分）を取り込んだうえで、上記の追加候補14件を data/events.json に追加。再確認推奨としていた2件（ちいかわベーカリー、名探偵プリキュア）は個別ページの再確認で愛知会場1か所と確定。67件→81件、last_updated=2026-11-26。
+- ローカル表示で81件の表示・コンソールエラーなしを確認。既存の重複URL1組（OutermostNAGOYAの一覧URLを共有する2件）は別イベントのためそのまま。
