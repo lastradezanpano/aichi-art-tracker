@@ -1,15 +1,17 @@
 {
-  "checked_at": "2026-11-25",
+  "checked_at": "2026-11-26",
   "sources": {
     "artscape": {
       "ok": true,
-      "scraped": 22,
+      "scraped": 23,
       "error": null,
-      "added": 0,
+      "added": 1,
       "updated": 0,
       "skipped_budget": 0,
       "detail_errors": 0,
-      "added_titles": [],
+      "added_titles": [
+        "セカイノコトワリ――私たちの時代の美術"
+      ],
       "needs_review": []
     },
     "インターネットミュージアム": {
@@ -38,84 +40,18 @@
       "ok": true,
       "scraped": 48,
       "error": null,
-      "added": 2,
+      "added": 1,
       "updated": 0,
       "skipped_budget": 0,
       "detail_errors": 0,
       "added_titles": [
-        "BIGBANG 2026-2027 WORLD TOUR XX : COSMOS IN JAPAN POP-UP STORE",
-        "第2弾期間 ノベルティ引換"
+        "初音ミク Patchwork Parade Ver. ストア in 全国7ヵ所"
       ],
       "needs_review": [
         {
-          "title": "おねがいアイプリ × 洒落CAFE 12月7日より3都市で順次開催!",
-          "url": "https://collabo-cafe.com/events/collabo/onegai-aipri-buzzlium-cafe-sharecafe-2026/",
-          "reason": "会場が愛知か判断できない: Anique Shop"
-        },
-        {
-          "title": "ちいかわベーカリー POP UP SHOP in 名古屋 12月11日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/chiikawa-bakery-nagoya-popup-parco-2026/",
-          "reason": "愛知の会場が複数(2か所)"
-        },
-        {
-          "title": "にじさんじ × スイパラ 第17弾 12月29日より10店舗で開催!",
-          "url": "https://collabo-cafe.com/events/collabo/nijisanji-cafe-sweets-paradise-vol17-2026-2027/",
-          "reason": "会場が愛知か判断できない: スイーツパラダイス全国10店舗"
-        },
-        {
-          "title": "ヨルムンガンド20周年 × HUB コラボ in 4店舗 1月8日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/jormungand-20th-anniv-hub-collabo-2027/",
-          "reason": "会場欄が住所表記: 名駅四丁目店"
-        },
-        {
-          "title": "スクエニポップアップカフェ グランドメニュー 11月26日より提供!",
-          "url": "https://collabo-cafe.com/events/collabo/sqex-popup-cafe-grandmenu-yokohama-osaka-nagoya-2026-2027/",
-          "reason": "会場欄が住所表記: 〒460-0003 愛知県名古屋市中区錦3丁目19-21 安心お宿 Nagoya"
-        },
-        {
-          "title": "名探偵プリキュア! × スイパラ 11月26日よりコラボカフェ開催!",
-          "url": "https://collabo-cafe.com/events/collabo/meitantei-precure-cafe-sweets-paradise-2026/",
-          "reason": "愛知の会場が複数(2か所)"
-        },
-        {
-          "title": "バンドリ! アワーノーツ × グラッテ 12月21日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/bang-dream-our-notes-cafe-gratte-2026/",
+          "title": "うたプリ × グラッテ 12月17日よりシャニライ発売記念で開催!",
+          "url": "https://collabo-cafe.com/events/collabo/utapri-cafe-gratte-shining-live-switch-2026-2027/",
           "reason": "1行に複数の会場: アニメイトグラッテ池袋本店・秋葉原ANNEX・横浜ビブレ・名古屋・大阪日本橋・岡"
-        },
-        {
-          "title": "とらドラ! 原作20周年記念フェア in アニメイト 1月23日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/toradora-kemomimi-maid-20th-fair-animate-2027/",
-          "reason": "愛知会場の期間を1つに確定できない"
-        },
-        {
-          "title": "狩野英孝 × and GALLERY 第2弾 12月9日よりカフェ開催!",
-          "url": "https://collabo-cafe.com/events/collabo/kano-eiko-eikogo-cafe-and-gallery-vol2-2026-2027/",
-          "reason": "1行に複数の会場: and GALLERY 池袋店 / 名古屋1号店 / なんば1号店 / 仙台店 "
-        },
-        {
-          "title": "ヘタリア × グラッテ 周年カフェのリバイバル 12月18日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/hetalia-world-stars-cafe-gratte-revival-2026/",
-          "reason": "1行に複数の会場: アニメイトグラッテ池袋本店・秋葉原ANNEX・横浜ビブレ・名古屋・大阪日本橋・岡"
-        },
-        {
-          "title": "薬屋のひとりごと × グラッテ ハロウィン 11月14日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/kusuriya-halloween-fair-gratte-2026/",
-          "reason": "1行に複数の会場: アニメイトグラッテ アニメイト通り店・池袋本店・秋葉原ANNEX・渋谷・吉祥寺パ"
-        },
-        {
-          "title": "WIND BREAKER × スイパラ第2弾 12月1日より順次開催!",
-          "url": "https://collabo-cafe.com/events/collabo/wind-breaker-cafe-sweets-paradise-vol2-2026/",
-          "reason": "1行に複数の会場: 新宿東口店 / 梅田店 / 名古屋スパイラルタワーズ店 / 丸井大宮店 / 仙台"
-        },
-        {
-          "title": "NO.6 × カラオケの鉄人 15周年コラボ 11月5日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/no6-shop-tieup-karatetsu-15th-2026/",
-          "reason": "会場が愛知か判断できない: カラオケの鉄人 全国10店舗(コンセプトルームは2店舗)"
-        },
-        {
-          "title": "金カム × サンリオ POPUP in キデイランド 11月13日より開催!",
-          "url": "https://collabo-cafe.com/events/collabo/goldenkamuy-sanrio-3rd-popup-kiddyland-2026/",
-          "reason": "期間を読み取れない: 2026年※大阪会場(キデイランド梅田店)のみ12月13日まで"
         }
       ]
     }

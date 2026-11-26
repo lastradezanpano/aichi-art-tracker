@@ -477,17 +477,6 @@
       "dateEnd": "2026-12-07"
     },
     {
-      "date": "2026-11-26",
-      "dateEnd": "2026-12-14",
-      "title": "ししわたクッキング Collaboration Cafe in SMILE BASE CAFE（ホロライブ）",
-      "venue": "SMILE BASE CAFE 名古屋栄店",
-      "city": "名古屋市",
-      "category": "コラボカフェ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/hololive-cafe-smile-base-cafe-shishiwata-cooking-2026/"
-    },
-    {
       "title": "SQUARE ENIX POP UP CAFE グランドメニュー",
       "date": "2026-11-26",
       "dateEnd": "2027-03-28",
@@ -508,6 +497,17 @@
       "note": "",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/meitantei-precure-cafe-sweets-paradise-2026/"
+    },
+    {
+      "date": "2026-11-26",
+      "dateEnd": "2026-12-14",
+      "title": "ししわたクッキング Collaboration Cafe in SMILE BASE CAFE（ホロライブ）",
+      "venue": "SMILE BASE CAFE 名古屋栄店",
+      "city": "名古屋市",
+      "category": "コラボカフェ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/hololive-cafe-smile-base-cafe-shishiwata-cooking-2026/"
     },
     {
       "date": "2026-11-27",
@@ -620,17 +620,6 @@
       "url": "https://artscape.jp/exhibitions/81284/"
     },
     {
-      "date": "2026-12-09",
-      "dateEnd": "2026-12-15",
-      "title": "「君の好きは無敵」POP UP SHOP in 名古屋",
-      "venue": "ジェイアール名古屋タカシマヤ 8F 中央エスカレーター横 特設会場",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/kiminosukihamuteki-dec-popup-shop-jr-nagoya-takashimaya-2026/"
-    },
-    {
       "title": "EIKO!GO!! × and GALLERY「EIKO!Cafe」第2弾",
       "date": "2026-12-09",
       "dateEnd": "2027-01-06",
@@ -640,6 +629,17 @@
       "note": "12/31〜1/3は店休日。",
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/kano-eiko-eikogo-cafe-and-gallery-vol2-2026-2027/"
+    },
+    {
+      "date": "2026-12-09",
+      "dateEnd": "2026-12-15",
+      "title": "「君の好きは無敵」POP UP SHOP in 名古屋",
+      "venue": "ジェイアール名古屋タカシマヤ 8F 中央エスカレーター横 特設会場",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/kiminosukihamuteki-dec-popup-shop-jr-nagoya-takashimaya-2026/"
     },
     {
       "date": "2026-12-10",
@@ -653,6 +653,17 @@
       "url": "https://collabo-cafe.com/events/collabo/osamu-goods-50th-exhibition-nagoya-2026-2027/"
     },
     {
+      "title": "ちいかわベーカリー NAGOYA POP UP SHOP",
+      "date": "2026-12-11",
+      "dateEnd": "2027-01-11",
+      "venue": "名古屋PARCO 西館8F イベントスペース",
+      "city": "名古屋市",
+      "category": "ポップアップ・グッズ",
+      "note": "",
+      "src": "collabo_cafe",
+      "url": "https://collabo-cafe.com/events/collabo/chiikawa-bakery-nagoya-popup-parco-2026/"
+    },
+    {
       "date": "2026-12-11",
       "title": "チアリステイルズ POP-UP STORE",
       "venue": "名古屋PARCO",
@@ -664,15 +675,15 @@
       "dateEnd": "2026-12-27"
     },
     {
-      "title": "ちいかわベーカリー NAGOYA POP UP SHOP",
       "date": "2026-12-11",
-      "dateEnd": "2027-01-11",
-      "venue": "名古屋PARCO 西館8F イベントスペース",
+      "title": "初音ミク Patchwork Parade Ver. ストア in 全国7ヵ所",
+      "venue": "ハンズ 名古屋店",
       "city": "名古屋市",
       "category": "ポップアップ・グッズ",
       "note": "",
       "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/chiikawa-bakery-nagoya-popup-parco-2026/"
+      "url": "https://collabo-cafe.com/events/collabo/hatsune-miku-pop-up-store-hands-2026/",
+      "dateEnd": "2027-01-10"
     },
     {
       "date": "2026-12-12",
@@ -838,6 +849,17 @@
       "src": "collabo_cafe",
       "url": "https://collabo-cafe.com/events/collabo/mamegoma-daimaru-popup-store-2026/",
       "dateEnd": "2027-02-02"
+    },
+    {
+      "date": "2027-01-29",
+      "title": "セカイノコトワリ――私たちの時代の美術",
+      "venue": "愛知県美術館",
+      "city": "名古屋市",
+      "category": "展覧会",
+      "note": "",
+      "src": "artscape",
+      "url": "https://artscape.jp/exhibitions/84399/",
+      "dateEnd": "2027-04-04"
     },
     {
       "date": "2027-02-06",
