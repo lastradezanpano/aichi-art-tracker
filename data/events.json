@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26",
+  "last_updated": "2026-11-27",
   "last_updated_note": "GitHub Actionsでartscape・インターネットミュージアム・原画展.info・コラボカフェ.comを自動取得（それ以外の情報源はClaudeの定期確認分を維持）",
   "artifact_url": "https://claude.ai/artifact/553CN1tWTdnJD3oWQDpKmA",
   "events": [
@@ -343,17 +343,6 @@
       "src": "museum_or_jp",
       "url": "https://www.museum.or.jp/event/127599",
       "dateEnd": "2026-12-25"
-    },
-    {
-      "title": "ゴールデンカムイ × サンリオキャラクターズ POP UP SHOP",
-      "date": "2026-11-13",
-      "dateEnd": "2026-11-26",
-      "venue": "キデイランド名古屋パルコ店",
-      "city": "名古屋市",
-      "category": "ポップアップ・グッズ",
-      "note": "",
-      "src": "collabo_cafe",
-      "url": "https://collabo-cafe.com/events/collabo/goldenkamuy-sanrio-3rd-popup-kiddyland-2026/"
     },
     {
       "date": "2026-11-14",

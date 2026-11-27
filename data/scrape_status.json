@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-26",
+  "checked_at": "2026-11-27",
   "sources": {
     "artscape": {
       "ok": true,
@@ -44,6 +44,11 @@
       "detail_errors": 0,
       "added_titles": [],
       "needs_review": [
+        {
+          "title": "ユーリ!!! on ICE 10周年 グラッテ 12月8日より開催!",
+          "url": "https://collabo-cafe.com/events/collabo/yuri-on-ice-cafe-gratte-10th-anniversary-2026-2027/",
+          "reason": "1行に複数の会場: アニメイトグラッテ アニメイト通り店・池袋本店・秋葉原ANNEX・渋谷・吉祥寺パ"
+        },
         {
           "title": "うたプリ × グラッテ 12月17日よりシャニライ発売記念で開催!",
           "url": "https://collabo-cafe.com/events/collabo/utapri-cafe-gratte-shining-live-switch-2026-2027/",
