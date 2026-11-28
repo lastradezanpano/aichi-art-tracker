@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27",
+  "checked_at": "2026-11-28",
   "sources": {
     "artscape": {
       "ok": true,
@@ -44,6 +44,11 @@
       "detail_errors": 0,
       "added_titles": [],
       "needs_review": [
+        {
+          "title": "大穢 × グラッテ 12月24日よりSwitch発売記念で開催!",
+          "url": "https://collabo-cafe.com/events/collabo/ooe-cafe-gratte-switch-2026-2027/",
+          "reason": "1行に複数の会場: アニメイトグラッテ池袋本店・秋葉原ANNEX・横浜ビブレ・名古屋・大阪日本橋・岡"
+        },
         {
           "title": "ユーリ!!! on ICE 10周年 グラッテ 12月8日より開催!",
           "url": "https://collabo-cafe.com/events/collabo/yuri-on-ice-cafe-gratte-10th-anniversary-2026-2027/",
